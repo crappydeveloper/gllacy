@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Артем Лапкин](https://up.htmlacademy.ru/htmlcss/18/user/239912).
-* Наставник: Сергей Зверобоев(https://htmlacademy.ru/profile/id307159).
+* Наставник: [Сергей Зверобоев](https://htmlacademy.ru/profile/id307159).
 
 ---
 
