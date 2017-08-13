@@ -9,15 +9,16 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a href="" class="main-header-logo"><img width="154" height="64" src="#" alt="Gllacy Shop"></a>
+            <div class="main-header-logo"><img width="154" height="64" src="#" alt="Gllacy Shop"></div>
             <ul class="navigation">
-                <li class="catalog-button">Каталог
+                <li class="catalog-button">
+                    <a class="catalog-link">Каталог</a>
                     <ul class="catalog">
-                        <li>Новинки</li>
-                        <li>Сливочное</li>
-                        <li>Щербеты</li>
-                        <li>Фруктовый лед</li>
-                        <li>Мелорин</li>
+                        <li><a>Новинки</a></li>
+                        <li><a>Сливочное</a></li>
+                        <li><a>Щербеты</a></li>
+                        <li><a>Фруктовый лед</a></li>
+                        <li><a>Мелорин</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Доставка и оплата</a></li>
@@ -28,7 +29,7 @@
                     <img width="17" height="17" src="#" alt="Поиск">
                 </li>
                 <li class="search">
-                    <form class="search-form" action="index.html" method="get">
+                    <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
                         <input type="text" placeholder="Что ищем?">
                     </form>
                 </li>
@@ -37,9 +38,9 @@
                     Вход
                 </li>
                 <li class="login">
-                    <form action="post" class="login-form">
+                    <form action="https://echo.htmlacademy.ru/" class="login-form" method="post">
                         <input type="text" placeholder="Электронная почта">
-                        <input type="text" placeholder="Пароль">
+                        <input type="password" placeholder="Пароль">
                         <a href="#">Войти</a>
                         <a href="#">Забыли пароль?</a>
                         <a href="#">Новая регистрация</a>
@@ -52,14 +53,14 @@
                 <li class="basket">
                     <table class="basket-table">
                         <tr>
-                            <td><span class="delete-item">X</span></td>
+                            <td><p><span class="delete-item">X</span></p></td>
                             <td><img width="35" height="35" src="http://placehold.it/35x35" alt="фото"></td>
                             <td>Пломбир с апельсиновым джемом</td>
                             <td>1,5 кг х <span class="basket-table-price">200 руб.</span></td>
                             <td>300 руб.</td>
                         </tr>
                         <tr>
-                            <td><span class="delete-item">X</span></td>
+                            <td><p><span class="delete-item">X</span></p></td>
                             <td><img width="35" height="35" src="http://placehold.it/35x35" alt="фото"></td>
                             <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
                             <td>1,5 кг х <span class="basket-table-price">300 руб.</span></td>
@@ -81,9 +82,11 @@
             <div class="slider-frame">
                 <p class="slider-frame-title">Крем-брюле и пломбир с малиновым джемом</p>
             </div>
-            <span class="control"></span>
-            <span class="control"></span>
-            <span class="control"></span>
+            <p class="control-block">
+                <span class="control"></span>
+                <span class="control"></span>
+                <span class="control"></span>
+            </p>
             <a href="#">Давайте оба!</a>
         </section>
     </main>
