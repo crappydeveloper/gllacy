@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Магазин мороженого "Глейси"</title>
+</head>
 
-  </body>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a href="" class="main-header-logo"><img src="" alt="Gllacy Shop"></a>
+            <ul class="navigation">
+                <li class="catalog-button">Каталог
+                    <ul class="catalog">
+                        <li>Новинки</li>
+                        <li>Сливочное</li>
+                        <li>Щербеты</li>
+                        <li>Фруктовый лед</li>
+                        <li>Мелорин</li>
+                    </ul>
+                </li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О компании</a></li>
+            </ul>
+            <ul class="user-navigation">
+                <li class="search-button"></li>
+                <li class="search">
+                    <form class="search-form" action="index.html" method="get">
+                        <input type="text" placeholder="Что ищем?">
+                    </form>
+                </li>
+                <li class="login-button"></li>
+                <li class="login">Вход
+                    <form action="post" class="login-form">
+                        <input type="text" placeholder="Электронная почта">
+                        <input type="text" placeholder="Пароль">
+                        <a href="#">Войти</a>
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                    </form>
+                </li>
+                <li class="basket-button">Пусто</li>
+                <li class="basket">
+                    <table class="basket-table">
+                        <tr>
+                            <td><span class="delete-item">X</span></td>
+                            <td><img width="35" height="35" src="http://placehold.it/35x35" alt="фото"></td>
+                            <td>Пломбир с апельсиновым джемом</td>
+                            <td>1,5 кг х <span class="basket-table-price">200 руб.</span></td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="delete-item">X</span></td>
+                            <td><img width="35" height="35" src="http://placehold.it/35x35" alt="фото"></td>
+                            <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
+                            <td>1,5 кг х <span class="basket-table-price">300 руб.</span></td>
+                            <td>450 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Итого:750 руб.</td>
+                        </tr>
+                    </table>
+                    <a href="#" class="ordering">Оформить заказ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
 </html>
