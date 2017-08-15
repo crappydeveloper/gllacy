@@ -15,7 +15,7 @@
                     <a class="catalog-link">Каталог</a>
                     <ul class="catalog">
                         <li><a>Новинки</a></li>
-                        <li><a>Сливочное</a></li>
+                        <li><a href="catalog.html">Сливочное</a></li>
                         <li><a>Щербеты</a></li>
                         <li><a>Фруктовый лед</a></li>
                         <li><a>Мелорин</a></li>
@@ -165,7 +165,7 @@
                 </form>
             </div>
         </section>
-        <section class="map-section">
+        <section class="map">
             <h2 class="hidden">Адрес магазина Глейси</h2>
             <div class="map-picture">
                 <img width="1050" height="430" src="#" alt="Карта">
@@ -194,11 +194,23 @@
         </div>
         <div class="footer-copyright">
             <div class="image-wrappep">
-                <img width="108" height="39" src="#" alt="HTML academy">
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img width="108" height="39" src="#" alt="HTML academy">
+                </a>
             </div>
-            <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
+            <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
         </div>
     </footer>
+    <section class="modal feedback-section">
+        <h2 class="hidden">Форма обратной связи</h2>
+        <p>Мы обязательно вам ответим!</p>
+        <form action="https://echo.htmlacademy.ru/" class="feedback-form" method="post">
+            <input type="text" placeholder="Как вас зовут?">
+            <input type="text" placeholder="Ваша почта для ответа?">
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+            <input type="submit" value="Отправить">
+        </form>
+    </section>
 </body>
 
 </html>
