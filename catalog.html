@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог товаров - Глейси</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <div class="main-header-logo">
+                <a class="main-header-logo-link" href="index.html"><img width="154" height="64" src="" alt="Gllacy Shop"></a>
+            </div>
+            <ul class="navigation">
+                <li class="catalog-dropdown">
+                    <p class="catalog-title">Каталог</p>
+                    <ul class="catalog">
+                        <li><a>Новинки</a></li>
+                        <li><a>Сливочное</a></li>
+                        <li><a>Щербеты</a></li>
+                        <li><a>Фруктовый лед</a></li>
+                        <li><a>Мелорин</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О компании</a></li>
+            </ul>
+            <ul class="user-navigation">
+                <li class="search-button">
+                    <img width="17" height="17" src="#" alt="Поиск">
+                </li>
+                <li class="search">
+                    <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+                        <input type="text" placeholder="Что ищем?">
+                    </form>
+                </li>
+                <li class="login-button">
+                    <img width="21" height="19" src="#" alt="Вход">
+                    <p>Вход</p>
+                </li>
+                <li class="login">
+                    <form action="https://echo.htmlacademy.ru/" class="login-form" method="post">
+                        <input type="text" placeholder="Электронная почта">
+                        <input type="password" placeholder="Пароль">
+                        <input type="submit" value="Войти"></input>
+                        <p class="user-creating">
+                            <a href="#">Забыли пароль?</a>
+                            <a href="#">Новая регистрация</a>
+                        </p>
+                    </form>
+                </li>
+                <li class="basket-button">
+                    <div class="image-wrappep">
+                        <img width="21" height="20" src="#" alt="Корзина">
+                    </div>
+                    <p>Пусто</p>
+                </li>
+                <li class="basket">
+                    <table class="basket-table">
+                        <tr>
+                            <td><span class="delete-item">X</span></td>
+                            <td><img width="35" height="35" src="http://placehold.it/35x35" alt="фото"></td>
+                            <td><p>Пломбир с апельсиновым джемом</p></td>
+                            <td>1,5 кг х <span class="basket-table-price">200 руб.</span></td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="delete-item">X</span></td>
+                            <td><img width="35" height="35" src="http://placehold.it/35x35" alt="фото"></td>
+                            <td><p>Клубничный пломбир с присыпкой  из белого шоколада</p></td>
+                            <td>1,5 кг х <span class="basket-table-price">300 руб.</span></td>
+                            <td>450 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Итого:750 руб.</td>
+                        </tr>
+                    </table>
+                    <a href="#" class="ordering">Оформить заказ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="hidden">Каталог магазина Глейси</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li>Каталог</li>
+          <li class="breadcrumbs-active">Сливочное</li>
+        </ul>
+        <p class="working-hours">С 10 до 20, ежедневно</p>
+        <p class="phone-number">8 812 450-25-25</p>
+        <h2 class="icecream-type">Сливочное мороженое</h2>
+        <section class="filters">
+            <form action="https://echo.htmlacademy.ru/" class="filters-form" method="post">
+                <fieldset>
+                    <legend>Сортировка:</legend>
+                    <select name="sort">
+                        <option value="popularity" selected>По популярности</option>
+                        <option value="light">Сначала недорогие</option>
+                        <option value="popularity">Сначала дорогие</option>
+                        <option value="popularity">По жирности</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Цена:</legend>
+                    <div class="range-filter">
+                        <div class="price-controls">
+                            <input class="min-price" type="text" value="5 000"> руб. –
+                            <input class="max-price" type="text" value="15 000"> руб.
+                        </div>
+
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="toggle min-toggle"></div>
+                            <div class="toggle max-toggle"></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Жирность:</legend>
+                    <label><input type="radion" name="total-fat">0%</label>
+                    <label><input type="radion" name="total-fat">до 10%</label>
+                    <label><input type="radion" name="total-fat">до 30%</label>
+                    <label><input type="radion" name="total-fat">выше 30%</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Наполнители:</legend>
+                    <label><input type="checkbox" name="chocolate">Шоколадные<label>
+                    <label><input type="checkbox" name="sugar">Сахарные присыпки<label>
+                    <label><input type="checkbox" name="fruits">Фрукты<label>
+                    <label><input type="checkbox" name="syrups">Сиропы<label>
+                    <label><input type="checkbox" name="jam">Джемы<label>
+                </fieldset>
+                <button type="submit">Применить</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
