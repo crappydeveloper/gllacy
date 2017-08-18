@@ -9,7 +9,7 @@
     <header class="main-header">
         <nav class="main-navigation">
             <div class="main-header-logo">
-                <a class="main-header-logo-link" href="index.html"><img width="154" height="64" src="" alt="Gllacy Shop"></a>
+                <a class="main-header-logo-link" href="index.html"><img width="154" height="64" src="img/logo.svg" alt="Gllacy Shop"></a>
             </div>
             <ul class="navigation">
                 <li class="catalog-dropdown">
@@ -42,7 +42,7 @@
                     <form action="https://echo.htmlacademy.ru/" class="login-form" method="post">
                         <input type="text" placeholder="Электронная почта">
                         <input type="password" placeholder="Пароль">
-                        <input type="submit" value="Войти"></input>
+                        <input type="submit" value="Войти">
                         <p class="user-creating">
                             <a href="#">Забыли пароль?</a>
                             <a href="#">Новая регистрация</a>
@@ -91,6 +91,7 @@
         <p class="phone-number">8 812 450-25-25</p>
         <h2 class="icecream-type">Сливочное мороженое</h2>
         <section class="filters">
+            <h2 class="hidden">Фильтры товаров</h2>
             <form action="https://echo.htmlacademy.ru/" class="filters-form" method="post">
                 <fieldset>
                     <legend>Сортировка:</legend>
@@ -120,23 +121,24 @@
                 </fieldset>
                 <fieldset>
                     <legend>Жирность:</legend>
-                    <label><input type="radion" name="total-fat">0%</label>
-                    <label><input type="radion" name="total-fat">до 10%</label>
-                    <label><input type="radion" name="total-fat">до 30%</label>
-                    <label><input type="radion" name="total-fat">выше 30%</label>
+                    <label><input type="radio" name="total-fat">0%</label>
+                    <label><input type="radio" name="total-fat">до 10%</label>
+                    <label><input type="radio" name="total-fat">до 30%</label>
+                    <label><input type="radio" name="total-fat">выше 30%</label>
                 </fieldset>
                 <fieldset>
                     <legend>Наполнители:</legend>
-                    <label><input type="checkbox" name="chocolate">Шоколадные<label>
-                    <label><input type="checkbox" name="sugar">Сахарные присыпки<label>
-                    <label><input type="checkbox" name="fruits">Фрукты<label>
-                    <label><input type="checkbox" name="syrups">Сиропы<label>
-                    <label><input type="checkbox" name="jam">Джемы<label>
+                    <label><input type="checkbox" name="chocolate">Шоколадные</label>
+                    <label><input type="checkbox" name="sugar">Сахарные присыпки</label>
+                    <label><input type="checkbox" name="fruits">Фрукты</label>
+                    <label><input type="checkbox" name="syrups">Сиропы</label>
+                    <label><input type="checkbox" name="jam">Джемы</label>
                 </fieldset>
                 <button type="submit">Применить</button>
             </form>
         </section>
         <section class="catalog-items">
+            <h2 class="hidden">Список товаров</h2>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="http://lorempixel.com/output/food-q-c-200-200-4.jpg" alt="Мороженое">
@@ -245,6 +247,7 @@
     </main>
     <footer class="main-footer">
         <section class="footer-social">
+            <h2 class="hidden">Магазин Глейси в социальных сетях</h2>
             <ul>
                 <li><a href="#" class="social-btn">Твиттер</a></li>
                 <li><a href="#" class="social-btn">Инстаграм</a></li>
