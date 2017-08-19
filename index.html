@@ -9,12 +9,12 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <div class="main-header-logo"><img width="154" height="64" src="#" alt="Gllacy Shop"></div>
+            <div class="main-header-logo"><img width="154" height="64" src="img/logo.svg" alt="Gllacy Shop"></div>
             <ul class="navigation">
-                <li class="catalog-dropdown">
-                    <p class="catalog-title">Каталог</p>
-                    <ul class="catalog">
-                        <li><a>Новинки</a></li>
+                <li class="catalog">
+                    <a class="catalog-title">Каталог</a>
+                    <ul class="catalog-dropdown">
+                        <li class="catalog-new">Новинки</li>
                         <li><a href="catalog.html">Сливочное</a></li>
                         <li><a>Щербеты</a></li>
                         <li><a>Фруктовый лед</a></li>
@@ -26,7 +26,7 @@
             </ul>
             <ul class="user-navigation">
                 <li class="search-button">
-                    <img width="17" height="17" src="#" alt="Поиск">
+                    <object width="17" height="17" type="image/svg+xml" data="img/loupe.svg" class="search-logo"></object>
                 </li>
                 <li class="search">
                     <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -34,8 +34,10 @@
                     </form>
                 </li>
                 <li class="login-button">
-                    <img width="21" height="19" src="#" alt="Вход">
-                    <p>Вход</p>
+                    <div class="image-wrapper">
+                        <object width="21" height="19" type="image/svg+xml" data="img/entrance.svg" class="login-logo"></object>
+                    </div>
+                    <span>Вход</span>
                 </li>
                 <li class="login">
                     <form action="https://echo.htmlacademy.ru/" class="login-form" method="post">
@@ -50,23 +52,23 @@
                 </li>
                 <li class="basket-button">
                     <div class="image-wrappep">
-                        <img width="21" height="20" src="#" alt="Корзина">
+                        <object width="21" height="20" type="image/svg+xml" data="img/basket.svg" class="basket-logo"></object>
                     </div>
-                    <p>Пусто</p>
+                    <span>Пусто</span>
                 </li>
                 <li class="basket">
                     <table class="basket-table">
                         <tr>
-                            <td><span class="delete-item">X</span></td>
-                            <td><img width="35" height="35" src="http://placehold.it/35x35" alt="фото"></td>
+                            <td><p class="delete-item">X</p></td>
+                            <td><img width="35" height="35" src="img/orange.jpg" alt="фото"></td>
                             <td><p>Пломбир с апельсиновым джемом</p></td>
                             <td>1,5 кг х <span class="basket-table-price">200 руб.</span></td>
                             <td>300 руб.</td>
                         </tr>
                         <tr>
-                            <td><span class="delete-item">X</span></td>
-                            <td><img width="35" height="35" src="http://placehold.it/35x35" alt="фото"></td>
-                            <td><p>Клубничный пломбир с присыпкой  из белого шоколада</p></td>
+                            <td><p class="delete-item">X</p></td>
+                            <td><img width="35" height="35" src="img/strawberry.jpg" alt="фото"></td>
+                            <td><p>Клубничный пломбир с присыпкой из белого шоколада</p></td>
                             <td>1,5 кг х <span class="basket-table-price">300 руб.</span></td>
                             <td>450 руб.</td>
                         </tr>
@@ -83,21 +85,27 @@
         <h1 class="hidden">Магазин мороженого Глейси</h1>
         <section class="slider">
             <h2 class="hidden">Наши товары</h2>
-            <p class="working-hours">С 10 до 20, ежедневно</p>
-            <p class="phone-number">8 812 450-25-25</p>
+            <div class="information">
+                <p class="working-hours">С 10 до 20, ежедневно</p>
+                <p class="phone-number">8 812 450-25-25</p>
+            </div>
             <div class="slider-frame">
                 <p class="slider-frame-title">Крем-брюле и пломбир с малиновым джемом</p>
-                <span class="control"></span>
+                <a href="#">Давайте оба!</a>
             </div>
             <div class="slider-frame">
                 <p class="slider-frame-title">Шоколадный пломбир и лимонный сорбет</p>
-                <span class="control"></span>
+                <a href="#">Давайте оба!</a>
             </div>
             <div class="slider-frame">
                 <p class="slider-frame-title">Пломбир с помадкой и клубничный щербет</p>
+                <a href="#">Давайте оба!</a>
+            </div>
+            <div class="control-block">
+                <span class="control"></span>
+                <span class="control"></span>
                 <span class="control"></span>
             </div>
-            <a href="#">Давайте оба!</a>
         </section>
         <section class="special-offers">
             <h2 class="hidden">Уникальные предложения</h2>
@@ -116,7 +124,7 @@
             <h2 class="hidden">Лидеры продаж</h2>
             <div class="card">
                 <div class="image-wrappep">
-                    <img width="200" height="200" src="http://lorempixel.com/output/food-q-c-200-200-1.jpg" alt="Мороженое">
+                    <img width="200" height="200" src="img/orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="price">310&#8381;/кг</p>
                 <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -124,7 +132,7 @@
              </div>
              <div class="card">
                 <div class="image-wrappep">
-                    <img width="200" height="200" src="http://lorempixel.com/output/food-q-c-200-200-9.jpg" alt="Мороженое">
+                    <img width="200" height="200" src="img/coffee.jpg" alt="Сливочно-кофейное с кусочками шоколада">
                 </div>
                 <p class="price">380&#8381;/кг</p>
                 <p class="description">Сливочно-кофейное с кусочками шоколада</p>
@@ -132,7 +140,7 @@
              </div>
              <div class="card">
                 <div class="image-wrappep">
-                    <img width="200" height="200" src="http://lorempixel.com/output/food-q-c-200-200-2.jpg" alt="Мороженое">
+                    <img width="200" height="200" src="img/strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 </div>
                 <p class="price">355&#8381;/кг</p>
                 <p class="description">Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -140,7 +148,7 @@
             </div>
             <div class="card">
                 <div class="image-wrappep">
-                    <img width="200" height="200" src="http://lorempixel.com/output/food-q-c-200-200-4.jpg" alt="Мороженое">
+                    <img width="200" height="200" src="img/creme-brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
                 </div>
                 <p class="price">415&#8381;/кг</p>
                 <p class="description">Сливочное крем-брюле с карамельной подливкой</p>
@@ -159,7 +167,7 @@
         </section>
         <article class="news">
                 <h2 class="news-title">Новое в нашем блоге</h2>
-                <a>10 способов сервировки фруктовых щербетов к столу</a>
+                <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
         <section>
             <h2 class="hidden">Рассылка</h2>
@@ -174,7 +182,7 @@
         <section class="map">
             <h2 class="hidden">Адрес магазина Глейси</h2>
             <div class="map-picture">
-                <img width="1050" height="430" src="#" alt="Карта">
+                <img width="1050" height="430" src="img/map.jpg" alt="Карта">
             </div>
             <div class="contacts">
                 <p>Адрес главного офиса и офлайн магазина:<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
@@ -187,14 +195,22 @@
         <section class="footer-social">
             <h2 class="hidden">Магазин Глейси в социальных сетях</h2>
             <ul>
-                <li><a href="#" class="social-btn">Твиттер</a></li>
-                <li><a href="#" class="social-btn">Инстаграм</a></li>
-                <li><a href="#" class="social-btn">Фейсбук</a></li>
-                <li><a href="#" class="social-btn">Вконтакте</a></li>
+                <li>
+                    <a href="#" class="social-btn"><img width="32" height="32" src="img/twitter.svg" alt="Твиттер">Твиттер</a>
+                </li>
+                <li>
+                    <a href="#" class="social-btn"><img width="32" height="32" src="img/instagram.svg" alt="Инстаграм">Инстаграм</a>
+                </li>
+                <li>
+                    <a href="#" class="social-btn"><img width="32" height="32" src="img/fb.svg" alt="Фейсбук">Фейсбук</a>
+                </li>
+                <li>
+                    <a href="#" class="social-btn"><img width="32" height="32" src="img/vk.svg" alt="Вконтакте">Вконтакте</a>
+                </li>
             </ul>
         </section>
         <div class="footer-links">
-            <a href="#">Для поставщиков</a>
+            <a href="#"><object width="15" height="13" type="image/svg+xml" data="img/heart.svg" class="heart-svg"></object>Для поставщиков</a>
             <a href="#">О производстве</a>
             <a href="#">Наши документы</a>
             <a href="#">Экологические стандарты</a>
@@ -202,7 +218,7 @@
         <div class="footer-copyright">
             <div class="image-wrappep">
                 <a href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img width="108" height="39" src="#" alt="HTML academy">
+                    <object width="108" height="39" type="image/svg+xml" data="img/logo-htmlacademy.svg" class="htmlacademy-logo"></object>
                 </a>
             </div>
             <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</p>
