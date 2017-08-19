@@ -101,7 +101,8 @@
             <form action="https://echo.htmlacademy.ru/" class="filters-form" method="post">
                 <fieldset>
                     <legend>Сортировка:</legend>
-                    <select name="sort">
+                    <label class="hidden" for="sort">Выбор принципа сортировки</label>
+                    <select name="sort" id=sort>
                         <option value="popularity" selected>По популярности</option>
                         <option value="light">Сначала недорогие</option>
                         <option value="popularity">Сначала дорогие</option>
@@ -249,7 +250,7 @@
               <li class="pagination-item"><a href="#">3</a></li>
               <li class="pagination-item"><a href="#">4</a></li>
               <li class="pagination-item"><a href="#">5</a></li>
-              <li class="pagination-item"><button type="button" name="button">Следующая страница</button></li>
+              <li class="pagination-item"><a href="#"><img src="img/icon-right-small.svg" alt="Следующая страница">Следующая страница</a></li>
             </ul>
         </section>
     </main>
