@@ -30,7 +30,8 @@
                 </li>
                 <li class="search">
                     <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                        <input type="text" placeholder="Что ищем?">
+                        <input type="text" placeholder="Что ищем?" id="search">
+                        <label class="hidden" for="search">Что ищем?</label>
                     </form>
                 </li>
                 <li class="login-button">
@@ -41,8 +42,10 @@
                 </li>
                 <li class="login">
                     <form action="https://echo.htmlacademy.ru/" class="login-form" method="post">
-                        <input type="text" placeholder="Электронная почта">
-                        <input type="password" placeholder="Пароль">
+                        <input type="text" placeholder="Электронная почта" id="mail">
+                        <label class="hidden" for="mail">Электронная почта</label>
+                        <input type="password" placeholder="Пароль" id="password">
+                        <label class="hidden" for="password">Пароль</label>
                         <input type="submit" value="Войти">
                         <p class="user-creating">
                             <a href="#">Забыли пароль?</a>
@@ -52,21 +55,21 @@
                 </li>
                 <li class="basket-button">
                     <div class="image-wrappep">
-                        <object width="21" height="20" type="image/svg+xml" data="img/basket.svg" class="basket-logo"></object>
+                        <img width="21" height="20" src="img/basket.svg" alt="Пустая корзина">
                     </div>
                     <span>Пусто</span>
                 </li>
                 <li class="basket">
                     <table class="basket-table">
                         <tr>
-                            <td><p class="delete-item">X</p></td>
+                            <td><p class="delete-item">Удалить</p></td>
                             <td><img width="35" height="35" src="img/orange.jpg" alt="фото"></td>
                             <td><p>Пломбир с апельсиновым джемом</p></td>
                             <td>1,5 кг х <span class="basket-table-price">200 руб.</span></td>
                             <td>300 руб.</td>
                         </tr>
                         <tr>
-                            <td><p class="delete-item">X</p></td>
+                            <td><p class="delete-item">Удалить</p></td>
                             <td><img width="35" height="35" src="img/strawberry.jpg" alt="фото"></td>
                             <td><p>Клубничный пломбир с присыпкой из белого шоколада</p></td>
                             <td>1,5 кг х <span class="basket-table-price">300 руб.</span></td>
@@ -102,9 +105,9 @@
                 <a href="#">Давайте оба!</a>
             </div>
             <div class="control-block">
-                <span class="control"></span>
-                <span class="control"></span>
-                <span class="control"></span>
+                <button class="control">Первый слайд</button>
+                <button class="control">Второй слайд</button>
+                <button class="control">Третий слайд</button>
             </div>
         </section>
         <section class="special-offers">
@@ -174,7 +177,8 @@
             <div class="mail">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
                 <form action="https://echo.htmlacademy.ru/" class="mail-form" method="post">
-                    <input type="text" placeholder="Электронная почта">
+                    <input type="text" placeholder="Электронная почта" id="mail">
+                    <label class="hidden" for="mail"></label>
                     <button type="submit">Отправить</button>
                 </form>
             </div>
@@ -229,11 +233,14 @@
         <p>Мы обязательно вам ответим!</p>
         <form action="https://echo.htmlacademy.ru/" class="feedback-form" method="post">
             <p class="input-label"></p>
-            <input type="text" placeholder="Как вас зовут?">
+            <input type="text" placeholder="Как вас зовут?" id="your-name">
+            <label for="your-name">Как вас зовут?</label>
             <p class="input-label"></p>
-            <input type="text" placeholder="Ваша почта для ответа?">
+            <input type="text" placeholder="Ваша почта для ответа?" id="your-mail">
+            <label for="your-mail">Ваша почта для ответа</label>
             <p class="input-label"></p>
-            <textarea name="text" id="text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+            <textarea cols="30" rows="10" placeholder="Напишите что-нибудь..." name="text" id="text" ></textarea>
+            <label for="text">Напишите что-нибудь</label>
             <button type="submit">Отправить</button>
         </form>
     </section>

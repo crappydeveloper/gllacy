@@ -31,7 +31,8 @@
                 </li>
                 <li class="search">
                     <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                        <input type="text" placeholder="Что ищем?">
+                        <input type="text" placeholder="Что ищем?" id="search">
+                        <label class="hidden" for="search">Что ищем?</label>
                     </form>
                 </li>
                 <li class="login-button">
@@ -42,8 +43,10 @@
                 </li>
                 <li class="login">
                     <form action="https://echo.htmlacademy.ru/" class="login-form" method="post">
-                        <input type="text" placeholder="Электронная почта">
-                        <input type="password" placeholder="Пароль">
+                        <input type="text" placeholder="Электронная почта" id="mail">
+                        <label class="hidden" for="mail">Электронная почта</label>
+                        <input type="password" placeholder="Пароль" id="password">
+                        <label class="hidden" for="password">Пароль</label>
                         <input type="submit" value="Войти">
                         <p class="user-creating">
                             <a href="#">Забыли пароль?</a>
@@ -53,9 +56,9 @@
                 </li>
                 <li class="basket-button">
                     <div class="image-wrappep">
-                        <object width="21" height="20" type="image/svg+xml" data="img/basket-red.svg" class="basket-logo"></object>
+                        <img width="21" height="20" src="img/basket-red.svg" alt="Корзина с товарами">
                     </div>
-                    <span>Пусто</span>
+                    <span>2 товара</span>
                 </li>
                 <li class="basket">
                     <table class="basket-table">
@@ -109,8 +112,10 @@
                     <legend>Цена:</legend>
                     <div class="range-filter">
                         <div class="price-controls">
-                            <input class="min-price" type="text" value="5 000"> руб. –
-                            <input class="max-price" type="text" value="15 000"> руб.
+                            <input class="min-price" type="text" value="100" id="min-price"> руб. –
+                            <label class="hidden" for="min-price">Установка минимальной цены</label>
+                            <input class="max-price" type="text" value="500" id="max-price"> руб.
+                            <label class="hidden" for="max-price">Установка максимальной цены</label>
                         </div>
 
                         <div class="range-controls">
@@ -244,7 +249,7 @@
               <li class="pagination-item"><a href="#">3</a></li>
               <li class="pagination-item"><a href="#">4</a></li>
               <li class="pagination-item"><a href="#">5</a></li>
-              <li class="pagination-item"><a href="#"><img src="img/icon-right-small.svg" alt="Следующая страница"></a></li>
+              <li class="pagination-item"><a href="#"><button type="button" name="button">Следующая страница</button></li>
             </ul>
         </section>
     </main>
