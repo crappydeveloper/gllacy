@@ -167,22 +167,24 @@ body {
     line-height: 24px;
 }
 
-.slider-frame-first {
-    background-image: url("../img/ice-cream-first-frame.png");
+.slider-frame {
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.slider-frame-first {
+    background-image: url("../img/ice-cream-first-frame.png"),
+        url("../img/light-first-frame.png");
 }
 
 .slider-frame-second {
-    background-image: url("../img/ice-cream-second-frame.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("../img/ice-cream-second-frame.png"),
+        url("../img/light-second-frame.png");
 }
 
 .slider-frame-third {
-    background-image: url("../img/ice-cream-third-frame.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("../img/ice-cream-third-frame.png"),
+        url("../img/light-third-frame.png");
 }
 
 .slider-frame-title {
@@ -195,6 +197,43 @@ body {
     text-decoration: none;
     color: #ffffff;
 }
+
+/*_____SPECIAL_OFFERS_____*/
+
+.offer {
+    //background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+
+.raspberry {
+    background-image: url("../img/raspberry-background.jpg");
+}
+
+.chocolate {
+    background-image: url("../img/chocolate-background.jpg");
+}
+
+.offer h3 {
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.offer p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.offer a {
+    font-size: 18px;
+    line-height: 24px;
+    background-image: linear-gradient(#f26843, #e74b36);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*______________________________________________________________*/
 
 .offer-title {
     font-size: 35px;
