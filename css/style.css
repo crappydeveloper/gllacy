@@ -17,21 +17,29 @@ body {
     padding: 0;
 }
 
-.navigation > li > a {
+.navigation a {
     color: inherit;
-    border-bottom: 1px solid #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-.navigation > li > a:hover {
+.navigation > li > a:hover,
+.navigation > li > a:focus {
     border-radius: 10px;
     color: #323232;
     background-color: #ffffff;
 }
 
-.catalog:hover {
+.catalog a:hover,
+.catalog a:focus {
     background-color: #ffffff;
     color: #323232;
+}
+
+.catalog a:hover + .catalog-dropdown,
+.catalog a:focus + .catalog-dropdown,
+.catalog-dropdown:hover,
+.catalog-dropdown:focus {
+    display: block;
 }
 
 .catalog-dropdown {
@@ -42,7 +50,12 @@ body {
     padding: 0;
     border-radius: 5px;
     color: #323232;
-    //background-color: #ffffff;
+    background-color: #ffffff;
+    display: none;
+}
+
+.catalog-dropdown a {
+    text-decoration: none;
 }
 
 .catalog-new {
@@ -67,12 +80,31 @@ body {
 .search-button,
 .search,
 .login-button {
-    background-color: #ffffff;
-    opacity: 0.3;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search-button:hover,
+.search-button:focus,
+.search:hover,
+.search:focus,
+.login-button:hover,
+.login-button:focus {
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .user-navigation  form {
     background-color: #f8f7f4;
+}
+
+.search {
+    display: none;
+}
+
+.search-button:hover + .search,
+.search-button:focus + .search,
+.search:hover,
+.search:focus {
+    display: block;
 }
 
 .search-form {
@@ -88,9 +120,17 @@ body {
     line-height: 24,3px;
 }
 
-.login-form {
+.login-button:hover + .login,
+.login-button:focus + .login,
+.login:hover,
+.login:focus {
+    display: block;
+}
+
+.login {
     font-size: 14px;
     line-height: 24px;
+    display: none;
 }
 
 .login-form--input  {
@@ -106,13 +146,54 @@ body {
     font-size: 18px;
     line-height: 24px;
     border: none;
-    border-radius:
+    border-radius: 10px;
 }
 
 .user-creating a {
     font-size: 13px;
     line-height: 16px;
     color: #323232;
+}
+
+/*_____SLIDER_____*/
+
+.working-hours {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.phone-number {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.slider-frame-first {
+    background-image: url("../img/ice-cream-first-frame.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-frame-second {
+    background-image: url("../img/ice-cream-second-frame.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-frame-third {
+    background-image: url("../img/ice-cream-third-frame.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-frame-title {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.slider-frame a {
+    background-image: linear-gradient(#f26843, #e74b36);
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .offer-title {
