@@ -233,6 +233,37 @@ body {
     text-decoration: none;
 }
 
+/*_____HITS_____*/
+
+.image-wrapper img {
+    border-radius: 50%;
+}
+
+.card:before {
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    content: "";
+    border-radius: 50%;
+    background-image: url("../img/hit.svg");
+}
+
+.price {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.uppercase {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: underline;
+}
+
 /*______________________________________________________________*/
 
 .offer-title {
