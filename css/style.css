@@ -289,6 +289,7 @@ body {
 
 .card .button {
     display: none;
+
 }
 
 .card:before {
@@ -322,6 +323,12 @@ body {
     color: #ffffff;
     text-decoration: none;
     background-image: linear-gradient(#f26843, #e74b36);
+    color: #fefefe;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
 }
 
 /*_____FEATURES_____*/
@@ -391,6 +398,114 @@ body {
     color: #353535;
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*_____MAILING_LIST_____*/
+
+.mailing-list {
+    background-image: url("../img/mail-background.png");
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.mailing-list-box {
+    background-color: #f8f7f4;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.mailing-list p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #5a5a5a;
+    font-weight: normal;
+}
+
+.mailing-list input {
+    border: 1px solid #acc2b6;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.mailing-list button {
+    background-image: linear-gradient(#f26843, #e74b36);
+    color: #fefefe;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/*_____MAP_____*/
+
+.contacts {
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #323232;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.contacts-address span {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.contacts-number span {
+    line-height: 22px;
+}
+
+.contacts-number b {
+    font-size: 18px;
+}
+
+.contacts-button {
+    text-decoration: none;
+    background-image: linear-gradient(#f26843, #e74b36);
+    color: #fefefe;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/*_____FOOTER_____*/
+
+.main-footer {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.footer-links a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    color: #fefefe;
 }
 
 /*______________________________________________________________*/

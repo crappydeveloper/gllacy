@@ -176,15 +176,17 @@
                 <h2 class="news-title">Новое в нашем блоге</h2>
                 <a class="news-paragraph" href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
-        <section>
-            <h2 class="hidden">Рассылка</h2>
-            <div class="mail">
-                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-                <form action="https://echo.htmlacademy.ru/" class="mail-form" method="post">
-                    <input type="text" placeholder="Электронная почта" id="mail">
-                    <label class="hidden" for="mail"></label>
+        <section class="mailing-list">
+            <div class="mailing-list-box">
+                <h2 class="hidden">Рассылка</h2>
+                <div class="mail">
+                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас    происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                    <form action="https://echo.htmlacademy.ru/" class="mail-form" method="post">
+                        <input type="text" placeholder="Электронная почта" id="mail">
+                        <label class="hidden" for="mail">Электронная почта</label>
                     <button type="submit">Отправить</button>
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="map">
@@ -193,9 +195,9 @@
                 <img width="1050" height="430" src="img/map.jpg" alt="Карта">
             </div>
             <div class="contacts">
-                <p>Адрес главного офиса и офлайн магазина:<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
-                <p>Для заказов по телефону:<b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
-                <a href="#">Форма обратной связи</a>
+                <p class="contacts-address">Адрес главного офиса и офлайн магазина:<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+                <p class="contacts-number">Для заказов по телефону:<span><b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</span></p>
+                <a class="contacts-button" href="#">Форма обратной связи</a>
             </div>
         </section>
     </main>
@@ -218,7 +220,7 @@
             </ul>
         </section>
         <div class="footer-links">
-            <a href="#"><object width="15" height="13" type="image/svg+xml" data="img/heart.svg" class="heart-svg"></object>Для поставщиков</a>
+            <a href="#"><object width="15" height="13" type="image/svg+xml" data="img/heart.svg" class="heart-svg"></object><b>Для поставщиков</b></a>
             <a href="#">О производстве</a>
             <a href="#">Наши документы</a>
             <a href="#">Экологические стандарты</a>
