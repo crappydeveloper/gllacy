@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог товаров - Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,12 +30,12 @@
             <ul class="user-navigation">
                 <li class="search-button">
                     <object width="17" height="17" type="image/svg+xml" data="img/loupe.svg" class="search-logo"></object>
-                </li>
-                <li class="search">
-                    <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                        <input type="text" placeholder="Что ищем?" id="search">
-                        <label class="hidden" for="search">Что ищем?</label>
-                    </form>
+                    <div class="search">
+                        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+                            <input type="text" placeholder="Что ищем?" id="search">
+                            <label class="hidden" for="search">Что ищем?</label>
+                        </form>
+                    </div>
                 </li>
                 <li class="login-button">
                     <div class="image-wrapper">
@@ -77,7 +79,7 @@
                             <td>450 руб.</td>
                         </tr>
                         <tr>
-                            <td colspan="5">Итого:750 руб.</td>
+                            <td colspan="5"><span class="total">Итого:750 руб.</span></td>
                         </tr>
                     </table>
                     <a href="#" class="ordering">Оформить заказ</a>
@@ -86,12 +88,12 @@
         </nav>
     </header>
     <main>
-        <h1 class="icecream-type">Сливочное мороженое</h1>
         <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
           <li>Каталог</li>
           <li class="breadcrumbs-active">Сливочное</li>
         </ul>
+        <h1 class="icecream-type">Сливочное мороженое</h1>
         <div class="information">
             <p class="working-hours">С 10 до 20, ежедневно</p>
             <p class="phone-number">8 812 450-25-25</p>
@@ -152,105 +154,106 @@
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/coffee.jpg" alt="Сливочно-кофейное с кусочками шоколада">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочно-кофейное с кусочками шоколада</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочно-клубничное с присыпкой из белого шоколада</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/creme-brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочное крем-брюле с карамельной подливкой</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/cowberry.jpg" alt="Сливочное с брусничным джемом">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочное с брусничным джемом</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/blueberry.jpg" alt="Сливочно-черничное с цельными ягодами черники">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочно-черничное с цельными ягодами черники</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/lemon.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочно-лимонное с карамельной присыпкой</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/chocolate-chips.jpg" alt="Сливочное с шоколадной стружкой">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочное с шоколадной стружкой</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/vanilla.jpg" alt="Сливочно-ванильное с кусочками шоколада">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочно-ванильное с кусочками шоколада</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/menthol.jpg" alt="Сливочноe с ментоловым сиропом">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочноe с ментоловым сиропом</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/chocolate-pieces.jpg" alt="Сливочное с кусочками черного шоколада">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочное с кусочками черного шоколада</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrappep">
                     <img width="200" height="200" src="img/mint.jpg" alt="Сливочное с мятным сиропом">
                 </div>
-                <p class="price">415&#8381;/кг</p>
+                <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочное с мятным сиропом</p>
-                <a href="#">Быстрый просмотр!</a>
+                <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <ul class="pagination-list">
+                <li class="pagination-item previous-page"><a href="#"><img src="img/icon-right-small.svg" alt="Следующая страница">Предыдущая страница</a></li>
               <li class="pagination-item pagination-item-active"><a>1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
               <li class="pagination-item"><a href="#">4</a></li>
               <li class="pagination-item"><a href="#">5</a></li>
-              <li class="pagination-item"><a href="#"><img src="img/icon-right-small.svg" alt="Следующая страница">Следующая страница</a></li>
+              <li class="pagination-item next-page"><a href="#"><img src="img/icon-right-small.svg" alt="Следующая страница">Следующая страница</a></li>
             </ul>
         </section>
     </main>
