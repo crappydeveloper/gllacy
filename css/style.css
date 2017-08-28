@@ -46,7 +46,7 @@ body {
 .navigation a {
     color: inherit;
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .nav-li > .nav-btn:hover,
@@ -94,6 +94,10 @@ body {
 
 .catalog-new {
     font-weight: bold;
+}
+
+.catalog-new h3 {
+    border-bottom: 1px solid #d1d0ce;
 }
 
 /*_____USER_NAVIGATION_____*/
@@ -146,6 +150,10 @@ body {
     line-height: 24.3px;
 }
 
+.search-form input::placeholder {
+    font-weight: normal;
+}
+
 .login-button:hover + .login,
 .login-button:focus + .login,
 .login:hover,
@@ -164,6 +172,10 @@ body {
     border-radius: 5px;
     font-size: 14px;
     line-height: 24px;
+}
+
+.login-form--input::placeholder {
+    font-weight: normal;
 }
 
 .login-form--button {
@@ -275,10 +287,12 @@ body {
 }
 
 .raspberry {
+    background-color: #c93756;
     background-image: url("../img/raspberry-background.jpg");
 }
 
 .chocolate {
+    background-color: #5b3c2f;
     background-image: url("../img/chocolate-background.jpg");
 }
 
@@ -361,6 +375,7 @@ body {
 /*_____FEATURES_____*/
 
 .features {
+    background-color: #efe4d0;
     background-image: url("../img/waffle.jpg");
     background-repeat: repeat;
     border-radius: 10px;
@@ -408,6 +423,7 @@ body {
 /*_____NEWS_____*/
 
 .news {
+    background-color: #f9e6eb;
     background-image: url("../img/strawberry-background.jpg");
     border-radius: 10px;
 }
@@ -430,6 +446,7 @@ body {
 /*_____MAILING_LIST_____*/
 
 .mailing-list {
+    background-color: #96cfff;
     background-image: url("../img/mail-background.png");
     padding: 5px;
     border-radius: 10px;
@@ -453,6 +470,10 @@ body {
     border-radius: 5px;
     font-size: 14px;
     line-height: 24px;
+    font-weight: normal;
+}
+
+.mailing-list input::placeholder {
     font-weight: normal;
 }
 
@@ -493,6 +514,40 @@ body {
 
 .contacts-button {
     text-decoration: none;
+    background-image: linear-gradient(#f26843, #e74b36);
+    color: #fefefe;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/*_____FEEDBACK_____*/
+
+.feedback-section {
+    background-color: #f8f7f4;
+    border-radius: 15px;
+}
+
+.promise {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #323232;
+}
+
+.feedback-form input {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.feedback-form input::placeholder {
+    font-weight: normal;
+}
+
+.feedback-form button {
     background-image: linear-gradient(#f26843, #e74b36);
     color: #fefefe;
     font-size: 18px;
@@ -642,10 +697,13 @@ body {
     vertical-align: middle;
 }
 
-/*_____CATALOG_ITEMS_____*/
-
-
 /*______________________________________________________________*/
+
+.active-page {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #d07058;
+}
 
 .offer-title {
     font-size: 35px;
