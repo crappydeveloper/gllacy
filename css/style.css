@@ -36,17 +36,37 @@ body {
 /*_____HEADER_____*/
 /*_____MAIN_NAVIGATION_____*/
 
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 1200px;
+    padding: 0 27px;
+}
+
+.main-header-logo {
+    margin-top: 9px;
+    margin-right: 25px;
+}
+
 .navigation {
     line-height: 18px;
     list-style: none;
     margin: 0;
+    margin-top: 30px;
+    display: flex;
+    margin-right: auto;
     padding: 0;
+}
+
+.nav-li {
+    margin-right: 25px;
 }
 
 .navigation a {
     color: inherit;
     text-decoration: underline;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .nav-li > .nav-btn:hover,
@@ -83,6 +103,7 @@ body {
 
 .catalog-dropdown a {
     text-decoration: none;
+    font-weight: normal;
 }
 
 .catalog-link:hover,
@@ -103,18 +124,43 @@ body {
 /*_____USER_NAVIGATION_____*/
 
 .user-navigation {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
+    margin-top: 23px;
     padding: 0;
     font-size: 14px;
     line-height: 16px;
 }
 
-.search-button,
-.search,
+.user-nav-li {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: 10px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.user-nav-li span {
+    margin-left: 8px;
+}
+
+.user-nav-li,
+.search {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search-button {
+    padding: 7px 8px 8px 8px;
+}
+
 .login-button,
 .basket-button {
-    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 16px;
 }
 
 .search-button:hover,
@@ -225,6 +271,7 @@ body {
 }
 
 /*_____SLIDER_____*/
+
 .slider {
     font-weight: bold;
 }
@@ -284,16 +331,17 @@ body {
     //background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
+    width: 560px;
 }
 
 .raspberry {
     background-color: #c93756;
-    background-image: url("../img/raspberry-background.jpg");
+    background-image: url("../img/raspberry-background-1200.jpg");
 }
 
 .chocolate {
     background-color: #5b3c2f;
-    background-image: url("../img/chocolate-background.jpg");
+    background-image: url("../img/chocolate-background-1200.jpg");
 }
 
 .offer h3 {
@@ -698,6 +746,25 @@ body {
 }
 
 /*______________________________________________________________*/
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    width: 1200px;
+    padding: 0 27px;
+    display: flex;
+    justify-content: space-between;
+}
 
 .active-page {
     text-decoration: none;
