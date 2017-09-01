@@ -36,17 +36,20 @@ body {
 /*_____HEADER_____*/
 /*_____MAIN_NAVIGATION_____*/
 
+header {
+    margin: 0;
+    padding: 0;
+}
+
 .main-navigation {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
-    width: 1200px;
-    padding: 0 27px;
 }
 
 .main-header-logo {
     margin-top: 9px;
     margin-right: 25px;
+    line-height: 0;
 }
 
 .navigation {
@@ -135,18 +138,14 @@ body {
 }
 
 .user-nav-li {
-    display: flex;
+    text-align: center;
+    vertical-align: middle;
     width: auto;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
     margin-left: 10px;
     height: 32px;
     border-radius: 16px;
-}
-
-.user-nav-li span {
-    margin-left: 8px;
+    border-top: 1px solid transparent;
 }
 
 .user-nav-li,
@@ -160,7 +159,12 @@ body {
 
 .login-button,
 .basket-button {
-    padding-left: 16px;
+    padding: 6px 34px 9px 34px;
+}
+
+.login-button div,
+.basket-button div {
+    position: absolute;
 }
 
 .search-button:hover,
@@ -277,17 +281,25 @@ body {
 }
 
 .information {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
     font-weight: bold;
+    white-space: nowrap;
+    margin-top: 0;
 }
 
 .working-hours {
     font-size: 14px;
     line-height: 16px;
+    margin-top: 0;
+    margin-bottom: 4px;
 }
 
 .phone-number {
     font-size: 22px;
     line-height: 24px;
+    margin-top: 0;
 }
 
 .slider-frame {
@@ -315,7 +327,7 @@ body {
     line-height: 60px;
 }
 
-.slider-frame a {
+div.slider-frame a {
     background-image: linear-gradient(#f26843, #e74b36);
     text-decoration: none;
     color: #ffffff;
@@ -324,14 +336,19 @@ body {
 /*_____SPECIAL_OFFERS_____*/
 
 .special-offers {
+    display: flex;
     font-weight: bold;
+    justify-content: space-between;
 }
 
 .offer {
-    //background-position: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
     background-repeat: no-repeat;
     border-radius: 15px;
     width: 560px;
+    padding: 17px 21px 24px 21px;
 }
 
 .raspberry {
@@ -344,17 +361,25 @@ body {
     background-image: url("../img/chocolate-background-1200.jpg");
 }
 
-.offer h3 {
+.offer-title {
+    margin: 0;
+    margin-bottom: 18px;
     font-size: 35px;
     line-height: 41px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .offer p {
+    margin: 0;
+    margin-bottom: 45px;
     font-size: 18px;
     line-height: 22px;
 }
 
 .offer a {
+    align-self: flex-end;
     font-size: 18px;
     line-height: 24px;
     background-image: linear-gradient(#f26843, #e74b36);
@@ -756,6 +781,12 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 27px;
+    box-sizing: border-box;
 }
 
 .wrapper {

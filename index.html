@@ -10,7 +10,7 @@
 
 <body class="slider-frame slider-frame-first">
     <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation container">
             <div class="main-header-logo">
                 <img width="154" height="64" src="img/logo.svg" alt="Gllacy Shop">
             </div>
@@ -68,7 +68,7 @@
     </header>
     <main>
         <h1 class="hidden">Магазин мороженого Глейси</h1>
-        <section class="slider">
+        <section class="slider container">
             <h2 class="hidden">Наши товары</h2>
             <div class="information">
                 <p class="working-hours">С 10 до 20, ежедневно</p>
@@ -92,8 +92,7 @@
                 <button class="control">Третий слайд</button>
             </div>
         </section>
-        <section class="special-offers">
-            <div class="wrapper">
+        <section class="special-offers container">
                 <h2 class="hidden">Уникальные предложения</h2>
                 <div class="offer raspberry">
                     <h3 class="offer-title">Малинка даром!</h3>
@@ -105,9 +104,8 @@
                     <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
                     <a href="#">Хочу шоколадки!</a>
                 </div>
-            </div>
         </section>
-        <section class="hits">
+        <section class="hits container">
             <h2 class="hidden">Лидеры продаж</h2>
             <div class="card">
                 <div class="image-wrapper">
@@ -142,7 +140,7 @@
                 <div class="button"><a href="#">Быстрый просмотр!</a></div>
             </div>
         </section>
-        <section class="features">
+        <section class="features container">
             <h2 class="hidden">Наши преимущества</h2>
             <p class="feature-title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
             <ul class="feature-list">
@@ -152,23 +150,25 @@
                 <li class="feature-li thermometer"><p class="feature-paragraph">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
             </ul>
         </section>
-        <article class="news">
-                <h2 class="news-title">Новое в нашем блоге</h2>
-                <a class="news-paragraph" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-        </article>
-        <section class="mailing-list">
-            <div class="mailing-list-box">
-                <h2 class="hidden">Рассылка</h2>
-                <div class="mail">
-                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас    происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-                    <form action="https://echo.htmlacademy.ru/" class="mail-form" method="post">
-                        <input type="text" placeholder="Электронная почта" id="mail">
-                        <label class="hidden" for="mail">Электронная почта</label>
-                    <button type="submit">Отправить</button>
-                    </form>
+        <div class="container">
+            <article class="news">
+                    <h2 class="news-title">Новое в нашем блоге</h2>
+                    <a class="news-paragraph" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </article>
+            <section class="mailing-list">
+                <div class="mailing-list-box">
+                    <h2 class="hidden">Рассылка</h2>
+                    <div class="mail">
+                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас    происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                        <form action="https://echo.htmlacademy.ru/" class="mail-form" method="post">
+                            <input type="text" placeholder="Электронная почта" id="mail">
+                            <label class="hidden" for="mail">Электронная почта</label>
+                        <button type="submit">Отправить</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="map">
             <h2 class="hidden">Адрес магазина Глейси</h2>
             <div class="map-picture">
@@ -181,7 +181,7 @@
             </div>
         </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
         <section class="footer-social">
             <h2 class="hidden">Магазин Глейси в социальных сетях</h2>
             <ul>
