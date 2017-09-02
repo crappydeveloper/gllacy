@@ -364,6 +364,7 @@ header {
     font-size: 32px;
     line-height: 44px;
     background-image: linear-gradient(#f26843, #e74b36);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
     text-decoration: none;
     color: #ffffff;
 }
@@ -390,7 +391,7 @@ header {
     background-repeat: no-repeat;
     border-radius: 15px;
     width: 560px;
-    padding: 17px 21px 24px 21px;
+    padding: 15px 21px 23px 18px;
 }
 
 .raspberry {
@@ -405,7 +406,7 @@ header {
 
 .offer-title {
     margin: 0;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     font-size: 35px;
     line-height: 41px;
     color: #ffffff;
@@ -415,18 +416,21 @@ header {
 
 .offer p {
     margin: 0;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
     font-size: 18px;
     line-height: 22px;
 }
 
 .offer a {
     align-self: flex-end;
+    padding: 12px 29px 13px;
     font-size: 18px;
     line-height: 24px;
+    border-radius: 24px;
     background-image: linear-gradient(#f26843, #e74b36);
     color: #ffffff;
     text-decoration: none;
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
 /*_____HITS_____*/
