@@ -277,16 +277,22 @@ header {
 /*_____SLIDER_____*/
 
 .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
     font-weight: bold;
+    height: 570px;
 }
 
 .information {
     display: flex;
-    align-items: flex-end;
     flex-direction: column;
+    margin-top: 0;
+    margin-bottom: auto;
+    align-items: flex-end;
     font-weight: bold;
     white-space: nowrap;
-    margin-top: 0;
 }
 
 .working-hours {
@@ -299,38 +305,74 @@ header {
 .phone-number {
     font-size: 22px;
     line-height: 24px;
-    margin-top: 0;
+    margin: 0;
 }
 
 .slider-frame {
-    background-position: left;
+    background-position: 280px 82px, 76px 0;
     background-repeat: no-repeat;
 }
 
 .slider-frame-first {
     background-image: url("../img/ice-cream-first-frame.png"),
-        url("../img/light-first-frame.png");
+        url("../img/light-first-frame-1200.png");
 }
 
 .slider-frame-second {
     background-image: url("../img/ice-cream-second-frame.png"),
-        url("../img/light-second-frame.png");
+        url("../img/light-second-frame-1200.png");
 }
 
 .slider-frame-third {
     background-image: url("../img/ice-cream-third-frame.png"),
-        url("../img/light-third-frame.png");
+        url("../img/light-third-frame-1200.png");
 }
 
-.slider-frame-title {
+.slider-lettering {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider-lettering-first {
+
+}
+
+.slider-lettering-second {
+    display: none;
+}
+
+.slider-lettering-third {
+    display: none;
+}
+
+.slider-title {
+    margin-top: 0;
+    margin-bottom: 27px;
+    padding: 0 230px;
+    text-align: center;
     font-size: 60px;
     line-height: 60px;
 }
 
-div.slider-frame a {
+.slider-lettering a {
+    align-self: center;
+    margin-bottom: 40px;
+    padding: 7px 50px 16px;
+    border-radius: 41px;
+    text-shadow: 0 2px 5px #a0200b;
+    font-size: 32px;
+    line-height: 44px;
     background-image: linear-gradient(#f26843, #e74b36);
     text-decoration: none;
     color: #ffffff;
+}
+
+.control-block {
+    position: absolute;
+    left: 27px;
+    bottom: 60px;
+    z-index: 1;
 }
 
 /*_____SPECIAL_OFFERS_____*/
@@ -389,6 +431,16 @@ div.slider-frame a {
 
 /*_____HITS_____*/
 
+.hits {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    width: 22.2%;
+}
+
 .image-wrapper img{
     border-radius: 50%;
 }
@@ -416,6 +468,9 @@ div.slider-frame a {
 }
 
 .price {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
     font-size: 30px;
     line-height: 45px;
     font-weight: bold;
@@ -423,7 +478,6 @@ div.slider-frame a {
 
 .uppercase {
     font-size: 45px;
-    line-height: 45px;
 }
 
 .description {
