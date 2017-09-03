@@ -380,6 +380,7 @@ header {
 
 .special-offers {
     display: flex;
+    margin-bottom: 40px;
     font-weight: bold;
     justify-content: space-between;
 }
@@ -435,14 +436,18 @@ header {
 
 /*_____HITS_____*/
 
-.hits {
+section.hits {
     display: flex;
     justify-content: space-between;
+    padding: 0 14px;
 }
 
 .card {
     position: relative;
-    width: 22.2%;
+    width: 267px;
+    padding: 6px 13px 22px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .image-wrapper img{
@@ -451,7 +456,9 @@ header {
 
 .card:hover,
 .card:focus {
-    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: -48px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+    background-color: rgba(248, 247, 244, 0.2);
 }
 
 .card:hover .button {
@@ -464,20 +471,25 @@ header {
 
 .card:before {
     position: absolute;
+    left: 13px;
+    top: 6px;
     width: 61px;
     height: 61px;
     content: "";
     border-radius: 50%;
     background-image: url("../img/hit.svg");
+    z-index: 1;
 }
 
 .price {
     position: absolute;
-    bottom: 60px;
-    left: 0;
+    left: 13px;
+    top: 183px;
     font-size: 30px;
     line-height: 45px;
     font-weight: bold;
+    text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+    z-index: 1;
 }
 
 .uppercase {
@@ -485,14 +497,19 @@ header {
 }
 
 .description {
+    margin: 0;
+    margin-bottom: 22px;
+    padding: 0 10px;
     font-size: 16px;
     line-height: 22px;
     text-decoration: underline;
     font-weight: 500;
+    text-align: center;
 }
 
 .card a {
-    color: #ffffff;
+    text-align: center;
+    padding: 11px 25px 13px;
     text-decoration: none;
     background-image: linear-gradient(#f26843, #e74b36);
     color: #fefefe;
@@ -500,7 +517,8 @@ header {
     line-height: 24px;
     font-weight: bold;
     border: none;
-    border-radius: 10px;
+    border-radius: 24px;
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
 /*_____FEATURES_____*/
