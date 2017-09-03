@@ -524,6 +524,7 @@ section.hits {
 /*_____FEATURES_____*/
 
 .features {
+    padding: 25px 25px 15px 20px;
     background-color: #efe4d0;
     background-image: url("../img/waffle.jpg");
     background-repeat: repeat;
@@ -532,12 +533,26 @@ section.hits {
 }
 
 .feature-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.feature-li {
+    width: 43%;
+    padding: 0 3px 0 58px;
+    position: relative;
 }
 
 .feature-li::before {
     content: "";
     position: absolute;
+    top: 2px;
+    left: 0;
     width: 49px;
     height: 49px;
 }
@@ -559,6 +574,7 @@ section.hits {
 }
 
 .feature-title {
+    margin: 0;
     font-size: 24px;
     line-height: 30px;
 }
