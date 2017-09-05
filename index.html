@@ -113,7 +113,7 @@
                 </div>
                 <p class="price"><span class="uppercase">310&#8381;</span>/кг</p>
                 <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-                <div class="button"><a href="#">Быстрый просмотр!</a></div>
+                <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
              </div>
              <div class="card">
                 <div class="image-wrapper">
@@ -121,7 +121,7 @@
                 </div>
                 <p class="price"><span class="uppercase">380&#8381;</span>/кг</p>
                 <p class="description">Сливочно-кофейное с кусочками шоколада</p>
-                <div class="button"><a href="#">Быстрый просмотр!</a></div>
+                <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
              </div>
              <div class="card">
                 <div class="image-wrapper">
@@ -129,7 +129,7 @@
                 </div>
                 <p class="price"><span class="uppercase">355&#8381;</span>/кг</p>
                 <p class="description">Сливочно-клубничное с присыпкой из белого шоколада</p>
-                <div class="button"><a href="#">Быстрый просмотр!</a></div>
+                <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrapper">
@@ -137,10 +137,10 @@
                 </div>
                 <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочное крем-брюле с карамельной подливкой</p>
-                <div class="button"><a href="#">Быстрый просмотр!</a></div>
+                <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
             </div>
         </section>
-        <div class="container">
+        <div class="container waffle-container">
             <section class="features">
                 <h2 class="hidden">Наши преимущества</h2>
                 <p class="feature-title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
@@ -152,7 +152,7 @@
                 </ul>
             </section>
         </div>
-        <div class="container">
+        <div class="container news_mail">
             <article class="news">
                     <h2 class="news-title">Новое в нашем блоге</h2>
                     <a class="news-paragraph" href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -161,7 +161,7 @@
                 <div class="mailing-list-box">
                     <h2 class="hidden">Рассылка</h2>
                     <div class="mail">
-                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас    происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
                         <form action="https://echo.htmlacademy.ru/" class="mail-form" method="post">
                             <input type="text" placeholder="Электронная почта" id="mail">
                             <label class="hidden" for="mail">Электронная почта</label>
@@ -174,37 +174,52 @@
         <section class="map">
             <h2 class="hidden">Адрес магазина Глейси</h2>
             <div class="map-picture">
-                <img width="1050" height="430" src="img/map.jpg" alt="Карта">
+                <img width="1200" height="430" src="img/map-1200.jpg" alt="Карта">
             </div>
             <div class="contacts">
-                <p class="contacts-address">Адрес главного офиса и офлайн магазина:<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-                <p class="contacts-number">Для заказов по телефону:<span><b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</span></p>
+                <p class="contacts-address">
+                    <span class="contacts-address-paragraph">Адрес главного офиса и офлайн магазина:</span>
+                    <span class="contacts-address-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+                </p>
+                <p class="contacts-number">
+                    <span>Для заказов по телефону:</span>
+                    <span class="line-height number">8 812 450-25-25</span>
+                    <span class="line-height">(с 10 до 20 ежедневно)</span>
+                </p>
                 <a class="contacts-button" href="#">Форма обратной связи</a>
             </div>
         </section>
     </main>
-    <footer class="main-footer container">
+    <footer class="main-footer">
         <section class="footer-social">
             <h2 class="hidden">Магазин Глейси в социальных сетях</h2>
-            <ul>
+            <ul class="footer-social-list">
                 <li>
-                    <a href="#" class="social-btn"><img width="32" height="32" src="img/twitter.svg" alt="Твиттер">Твиттер</a>
+                    <a href="#" class="social-btn"><img width="32" height="32" src="img/twitter.svg" alt="Твиттер">
+                      <span class="hidden">Твиттер</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#" class="social-btn"><img width="32" height="32" src="img/instagram.svg" alt="Инстаграм">Инстаграм</a>
+                    <a href="#" class="social-btn"><img width="32" height="32" src="img/instagram.svg" alt="Инстаграм">
+                      <span class="hidden">Инстаграм</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#" class="social-btn"><img width="32" height="32" src="img/fb.svg" alt="Фейсбук">Фейсбук</a>
+                    <a href="#" class="social-btn"><img width="32" height="32" src="img/fb.svg" alt="Фейсбук">
+                      <span class="hidden">Фейсбук</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#" class="social-btn"><img width="32" height="32" src="img/vk.svg" alt="Вконтакте">Вконтакте</a>
+                    <a href="#" class="social-btn"><img width="32" height="32" src="img/vk.svg" alt="Вконтакте">
+                      <span class="hidden">Вконтакте</span>
+                    </a>
                 </li>
             </ul>
         </section>
         <div class="footer-links">
-            <a href="#"><object width="15" height="13" type="image/svg+xml" data="img/heart.svg" class="heart-svg"></object><b>Для поставщиков</b></a>
-            <a href="#">О производстве</a>
+            <a class="favourite" href="#"><!--<object width="15" height="13" type="image/svg+xml" data="img/heart.svg" class="heart-svg"></object>--><b>Для поставщиков</b></a>
             <a href="#">Наши документы</a>
+            <a href="#">О производстве</a>
             <a href="#">Экологические стандарты</a>
         </div>
         <div class="footer-copyright">

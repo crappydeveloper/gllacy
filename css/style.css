@@ -369,6 +369,18 @@ header {
     color: #ffffff;
 }
 
+.slider-lettering a:hover,
+.slider-lettering a:focus {
+  background-image: linear-gradient( 90deg, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.slider-lettering a:active {
+  background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
+}
+
 .control-block {
     position: absolute;
     left: 27px;
@@ -434,6 +446,17 @@ header {
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
+.offer a:hover,
+.offer a:focus {
+  background-image: linear-gradient( 90deg, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
+}
+
+.offer a:active {
+  background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
+}
+
 /*_____HITS_____*/
 
 section.hits {
@@ -461,11 +484,11 @@ section.hits {
     background-color: rgba(248, 247, 244, 0.2);
 }
 
-.card:hover .button {
+.card:hover .card-button {
     display: block;
 }
 
-.card .button {
+.card-button {
     display: none;
 }
 
@@ -507,7 +530,7 @@ section.hits {
     text-align: center;
 }
 
-.card a {
+.card-button a {
     text-align: center;
     padding: 11px 25px 13px;
     text-decoration: none;
@@ -521,7 +544,23 @@ section.hits {
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
+.card-button a:hover,
+.card-button a:focus {
+  background-image: linear-gradient( 90deg, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
+}
+
+.card-button a:active {
+  background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
+}
+
+
 /*_____FEATURES_____*/
+
+.waffle-container {
+  margin-bottom: 40px;
+}
 
 .features {
     padding: 25px 25px 15px 20px;
@@ -587,13 +626,30 @@ section.hits {
 
 /*_____NEWS_____*/
 
+.news_mail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.news,
+.mailing-list {
+    width: 48%;
+    min-height: 220px;
+    box-sizing: border-box;
+}
+
 .news {
+    padding-top: 25px;
+    padding-left: 17px;
     background-color: #f9e6eb;
-    background-image: url("../img/strawberry-background.jpg");
+    background-image: url("../img/strawberry-background-1200.jpg");
     border-radius: 10px;
 }
 
 .news-title {
+    margin: 0;
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 22px;
     color: #5a5a5a;
@@ -612,22 +668,38 @@ section.hits {
 
 .mailing-list {
     background-color: #96cfff;
-    background-image: url("../img/mail-background.png");
+    background-image: url("../img/mail-background-1200.jpg");
     padding: 5px;
     border-radius: 10px;
 }
 
 .mailing-list-box {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 30px 20px 25px;
     background-color: #f8f7f4;
     border-radius: 10px;
-    margin: 0;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .mailing-list p {
+    margin: 0;
     font-size: 16px;
     line-height: 22px;
     color: #5a5a5a;
     font-weight: normal;
+}
+
+.mail-form {
+  display: flex;
+  justify-content: space-between;
 }
 
 .mailing-list input {
@@ -636,6 +708,8 @@ section.hits {
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
+    flex-grow: 1;
+    margin-right: 10px;
 }
 
 .mailing-list input::placeholder {
@@ -643,49 +717,110 @@ section.hits {
 }
 
 .mailing-list button {
+    padding: 10px 25px 15px;
     background-image: linear-gradient(#f26843, #e74b36);
     color: #fefefe;
     font-size: 18px;
     line-height: 24px;
     border: none;
-    border-radius: 10px;
+    border-radius: 25px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.mailing-list button:focus,
+.mailing-list button:hover {
+  background-image: linear-gradient( 90deg, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
+}
+
+.mailing-list button:active {
+  background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
 }
 
 /*_____MAP_____*/
 
+.map {
+  position: relative;
+  width: 1200px;
+  box-sizing: border-box;
+}
+
 .contacts {
+    position: absolute;
+    top: 62px;
+    right: 27px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    box-sizing: border-box;
+    padding: 32px 24px 31px 24px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.98);
     color: #323232;
     font-size: 14px;
     line-height: 20px;
     font-weight: normal;
 }
 
-.contacts-address span {
+.contacts-address {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.contacts-address-paragraph {
+    padding-right: 120px;
+}
+
+.contacts-address-address {
+    margin-bottom: 22px;
+    padding-right: 40px;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
 }
 
-.contacts-number span {
+.contacts-number {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+.line-height {
     line-height: 22px;
 }
 
-.contacts-number b {
+.number {
     font-size: 18px;
+    font-weight: bold;
 }
 
 .contacts-button {
-    text-decoration: none;
-    background-image: linear-gradient(#f26843, #e74b36);
-    color: #fefefe;
-    font-size: 18px;
-    line-height: 24px;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
+  text-align: center;
+  padding: 12px 28px 12px;
+  text-decoration: none;
+  background-image: linear-gradient(#f26843, #e74b36);
+  color: #fefefe;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.contacts-button:focus,
+.contacts-button:hover {
+  background-image: linear-gradient( 90deg, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
+}
+
+.contacts-button:active {
+  background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
 }
 
 /*_____FEEDBACK_____*/
@@ -725,34 +860,78 @@ section.hits {
 /*_____FOOTER_____*/
 
 .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    padding: 10px 27px;
+    box-sizing: border-box;
     font-size: 13px;
     line-height: 18px;
 }
 
-.footer-social ul {
-    list-style: none;
+.footer-social-list {
+    display: flex;
+    justify-content: flex-start;
     margin: 0;
+    margin-left: 3px;
     padding: 0;
+    list-style: none;
+}
+
+.footer-social-list li {
+    border-radius: 50%;
+    margin-right: 17px;
+}
+
+.footer-social-list img {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
 }
 
 .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 27%;
+    justify-content: flex-start;
     font-size: 13px;
     line-height: 18px;
 }
 
 .footer-links a {
+    width: 45%;
+    white-space: nowrap;
     text-decoration: underline;
     color: #ffffff;
 }
 
+.favourite {
+  position: relative;
+}
+
+.favourite::before {
+    position: absolute;
+    content: url('../img/heart.svg');
+    left: -20px;
+    top: 3px;
+}
+
+
 .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 12px;
     line-height: 18px;
 }
 
 .footer-copyright a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #fefefe;
+}
+
+.footer-copyright p {
+  margin: 0;
 }
 
 /*__________CATALOG__________*/
