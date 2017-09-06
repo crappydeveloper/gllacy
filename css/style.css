@@ -79,6 +79,10 @@ header {
     background-color: #ffffff;
 }
 
+.catalog {
+    position: relative;
+}
+
 .catalog:hover .catalog-title {
     border-radius: 10px;
     background-color: #ffffff;
@@ -93,6 +97,8 @@ header {
 }
 
 .catalog-dropdown {
+    position: absolute;
+    width: 143px;
     font-size: 14px;
     line-height: 16px;
     list-style: none;
@@ -104,13 +110,23 @@ header {
     display: none;
 }
 
+.catalog-new h3 {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
 .catalog-dropdown a {
     text-decoration: none;
     font-weight: normal;
 }
 
-.catalog-link:hover,
-.catalog-link:focus {
+.catalog-dropdown li {
+    padding: 7px 0px 7px 20px;
+    text-align: left;
+}
+
+.catalog-dropdown li:hover,
+.catalog-dropdown li:focus {
     background-color: #fbded8;
     border-top: 1px solid #dce2dd;
     border-bottom: 1px solid #dce2dd;
