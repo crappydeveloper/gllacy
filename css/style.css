@@ -44,6 +44,7 @@ header {
 .main-navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .main-header-logo {
@@ -56,7 +57,6 @@ header {
     line-height: 18px;
     list-style: none;
     margin: 0;
-    margin-top: 30px;
     display: flex;
     margin-right: auto;
     padding: 0;
@@ -90,9 +90,7 @@ header {
 }
 
 .catalog:hover .catalog-dropdown,
-.catalog:focus .catalog-dropdown,
-.catalog-dropdown:hover,
-.catalog-dropdown:focus {
+.catalog:focus .catalog-dropdown {
     display: block;
 }
 
@@ -147,7 +145,6 @@ header {
     justify-content: space-between;
     list-style: none;
     margin: 0;
-    margin-top: 23px;
     padding: 0;
     font-size: 14px;
     line-height: 16px;
@@ -325,7 +322,7 @@ header {
 }
 
 .slider-frame {
-    background-position: 280px 82px, 76px 0;
+    background-position: 520px 82px, 316px 0;
     background-repeat: no-repeat;
 }
 
@@ -757,9 +754,12 @@ section.hits {
 
 /*_____MAP_____*/
 
+
+
 .map {
   position: relative;
   width: 1200px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -880,6 +880,7 @@ section.hits {
     justify-content: space-between;
     align-items: center;
     width: 1200px;
+    margin: 0 auto;
     padding: 10px 27px;
     box-sizing: border-box;
     font-size: 13px;
@@ -1072,6 +1073,7 @@ section.hits {
 
 .container {
     width: 1200px;
+    margin: 0 auto;
     padding: 0 27px;
     box-sizing: border-box;
 }
