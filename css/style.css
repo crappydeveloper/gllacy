@@ -89,8 +89,8 @@ header {
     color: #323232;
 }
 
-.catalog-title:hover + .catalog-dropdown,
-.catalog-title:focus + .catalog-dropdown,
+.catalog:hover .catalog-dropdown,
+.catalog:focus .catalog-dropdown,
 .catalog-dropdown:hover,
 .catalog-dropdown:focus {
     display: block;
