@@ -45,10 +45,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 73px;
 }
 
 .main-header-logo {
-    margin-top: 9px;
     margin-right: 25px;
     line-height: 0;
 }
@@ -96,6 +96,7 @@ header {
 
 .catalog-dropdown {
     position: absolute;
+    z-index: 1;
     width: 143px;
     font-size: 14px;
     line-height: 16px;
@@ -161,13 +162,18 @@ header {
     border-top: 1px solid transparent;
 }
 
-.user-nav-li,
-.search {
+.user-nav-li {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 .search-button {
     padding: 7px 8px 8px 8px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.search-button object {
+    padding-bottom: 7px;
 }
 
 .login-button,
@@ -193,6 +199,14 @@ header {
 
 .search {
     display: none;
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    right: 0;
+    padding:20px 15px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 .search-button:hover .search,
@@ -206,6 +220,7 @@ header {
 }
 
 .search-form input {
+    padding-left: 14px;
     border: 1px solid #acc2b6;
     border-radius: 5px;
     background-color: #ffffff;
@@ -224,13 +239,32 @@ header {
     display: block;
 }
 
+.login-button span {
+    padding-bottom: 17px;
+}
+
 .login {
+    position: absolute;
+    top: 56px;
+    right: 400px;
     font-size: 14px;
     line-height: 24px;
     display: none;
+    z-index: 1;
 }
 
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 17px 22px;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+
 .login-form--input  {
+    margin-bottom: 20px;
+    padding: 6px 14px;
     border: 1px solid #acc2b6;
     border-radius: 5px;
     font-size: 14px;
@@ -241,16 +275,33 @@ header {
     font-weight: normal;
 }
 
+.form-bottom-row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .login-form--button {
+    align-self: flex-start;
+    margin-right: 20px;
+    padding: 10px 25px 10px;
     background-image: linear-gradient(#f26843, #e74b36);
     color: #fefefe;
     font-size: 18px;
     line-height: 24px;
     border: none;
-    border-radius: 10px;
+    border-radius: 24px;
+}
+
+.user-creating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    text-align: left;
 }
 
 .user-creating a {
+    margin-bottom: 5px;
     font-size: 13px;
     line-height: 16px;
     color: #323232;
@@ -299,13 +350,10 @@ header {
 }
 
 .information {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-    margin-bottom: auto;
-    align-items: flex-end;
-    font-weight: bold;
-    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    right: 27px;
+    text-align: right;
 }
 
 .working-hours {
@@ -322,7 +370,7 @@ header {
 }
 
 .slider-frame {
-    background-position: 520px 82px, 316px 0;
+    background-position: 50% 4.5%, 50% 0;
     background-repeat: no-repeat;
 }
 
