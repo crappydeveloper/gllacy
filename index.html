@@ -30,7 +30,9 @@
             </ul>
             <ul class="user-navigation">
                 <li class="search-button user-nav-li">
-                    <object width="17" height="17" type="image/svg+xml" data="img/loupe.svg" class="search-logo"></object>
+                    <div class="search-button-wrapper nav-wrapper">
+                        <object width="17" height="17" type="image/svg+xml" data="img/loupe.svg" class="search-logo"></object>
+                    </div>
                     <div class="search">
                         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
                             <input type="text" placeholder="Что ищем?" id="search">
@@ -39,10 +41,12 @@
                     </div>
                 </li>
                 <li class="login-button user-nav-li">
-                    <div class="image-wrapper">
-                        <object width="21" height="19" type="image/svg+xml" data="img/entrance.svg" class="login-logo"></object>
-                    </div>
-                    <span>Вход</span>
+                    <a class="nav-wrapper" href="">
+                        <div class="image-wrapper">
+                            <object width="21" height="19" type="image/svg+xml" data="img/entrance.svg" class="login-logo"></object>
+                        </div>
+                        <span>Вход</span>
+                    </a>
                 </li>
                 <li class="login user-nav-li">
                     <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -60,10 +64,12 @@
                     </form>
                 </li>
                 <li class="basket-button user-nav-li">
-                    <div class="image-wrappep">
-                        <img width="21" height="20" src="img/basket.svg" alt="Пустая корзина">
-                    </div>
-                    <span>Пусто</span>
+                    <a href="" class="nav-wrapper">
+                        <div class="image-wrappep">
+                            <img width="21" height="20" src="img/basket.svg" alt="Пустая корзина">
+                        </div>
+                        <span>Пусто</span>
+                    </a>
                 </li>
             </ul>
         </nav>

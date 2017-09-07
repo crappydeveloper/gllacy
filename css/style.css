@@ -41,6 +41,13 @@ header {
     padding: 0;
 }
 
+.nav-wrapper {
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
 .main-navigation {
     display: flex;
     justify-content: space-between;
@@ -166,18 +173,14 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.search-button {
+.search-button .nav-wrapper {
     padding: 7px 8px 8px 8px;
     position: relative;
     padding-bottom: 5px;
 }
 
-.search-button object {
-    padding-bottom: 7px;
-}
-
-.login-button,
-.basket-button {
+.login-button .nav-wrapper,
+.basket-button .nav-wrapper {
     padding: 6px 34px 9px 34px;
 }
 
