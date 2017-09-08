@@ -42,10 +42,12 @@ header {
 }
 
 .nav-wrapper {
+    display: inline-block;
     padding-bottom: 10px;
     text-decoration: none;
     color: inherit;
     text-align: center;
+    vertical-align: middle;
 }
 
 .main-navigation {
@@ -70,7 +72,7 @@ header {
 }
 
 .nav-li {
-    margin-right: 25px;
+    padding-bottom: 11px;
 }
 
 .navigation a {
@@ -79,22 +81,22 @@ header {
     font-weight: bold;
 }
 
-.nav-li > .nav-btn:hover,
-.nav-li > a:focus {
-    border-radius: 10px;
+.nav-btn {
+    padding: 5px 13px 7px 13px;
+    border-radius: 25px;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
     color: #323232;
     background-color: #ffffff;
+    text-decoration: none;
 }
 
 .catalog {
     position: relative;
 }
 
-.catalog:hover .catalog-title {
-    border-radius: 10px;
-    background-color: #ffffff;
-    color: #323232;
-}
 
 .catalog:hover .catalog-dropdown,
 .catalog:focus .catalog-dropdown {
@@ -103,6 +105,7 @@ header {
 
 .catalog-dropdown {
     position: absolute;
+    top: 30px;
     z-index: 1;
     width: 143px;
     font-size: 14px;
@@ -159,41 +162,58 @@ header {
 }
 
 .user-nav-li {
-    text-align: center;
-    vertical-align: middle;
+    padding-bottom: 7px;
     width: auto;
     box-sizing: border-box;
     margin-left: 10px;
-    height: 32px;
-    border-radius: 16px;
-    border-top: 1px solid transparent;
 }
 
-.user-nav-li {
+.user-nav-li .nav-wrapper {
+    border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.search-button .nav-wrapper {
-    padding: 7px 8px 8px 8px;
+.search-button {
     position: relative;
+}
+
+.search-button .nav-wrapper {
+    padding: 6px 8px 8px 8px;
     padding-bottom: 5px;
+}
+
+.login-button,
+.basket-button {
+    position: relative;
+}
+
+.login-button .nav-image-wrapper,
+.basket-button .nav-image-wrapper {
+    position: absolute;
+    left: 16px;
+    top: 6px;
 }
 
 .login-button .nav-wrapper,
 .basket-button .nav-wrapper {
-    padding: 6px 34px 9px 34px;
+    padding: 8px 5px 9px 45px;
+    box-sizing: border-box;
+    text-align: left;
 }
 
-.login-button div,
-.basket-button div {
-    position: absolute;
+.login-button .nav-wrapper {
+    width: 90px;
 }
 
-.search-button:hover,
-.search-button:focus,
-.login-button:hover,
-.login-button:focus {
+.basket-button .nav-wrapper {
+    width: 120px;
+}
+
+.nav-wrapper:hover,
+.nav-wrapper:focus {
     background-color: rgba(255, 255, 255, 1);
+    color: #323232;
+    cursor: pointer;
 }
 
 .user-navigation  form {
@@ -242,14 +262,10 @@ header {
     display: block;
 }
 
-.login-button span {
-    padding-bottom: 17px;
-}
-
 .login {
     position: absolute;
     top: 56px;
-    right: 400px;
+    right: 20%;
     font-size: 14px;
     line-height: 24px;
     display: none;
@@ -263,7 +279,6 @@ header {
     border-radius: 5px;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
 }
-
 
 .login-form--input  {
     margin-bottom: 20px;
@@ -310,13 +325,36 @@ header {
     color: #323232;
 }
 
+.basket-button:hover + .basket,
+.basket-button:focus + .basket,
+.basket:hover,
+.basket:focus,
+.basket:active {
+    display: block;
+}
+
+.basket {
+    display: none;
+    position: absolute;
+    top: 56px;
+    right: 11.4%;
+}
+
 .basket-table {
     font-size: 13px;
     line-height: 16px;
     font-weight: normal;
     background-color: #f8f7f4;
     color: #323232;
-    border-radius: ;
+    padding: 20px 15px 21px;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.basket-table td {
+    padding-top: 15px;
+    max-width: 225px;
 }
 
 .basket-table img {
@@ -352,7 +390,7 @@ header {
     height: 570px;
 }
 
-.information {
+.slider .information {
     position: absolute;
     top: 0;
     right: 27px;
@@ -362,6 +400,7 @@ header {
 .working-hours {
     font-size: 14px;
     line-height: 16px;
+    font-weight: bold;
     margin-top: 0;
     margin-bottom: 4px;
 }
@@ -369,6 +408,7 @@ header {
 .phone-number {
     font-size: 22px;
     line-height: 24px;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -546,6 +586,7 @@ section.hits {
     margin-bottom: -48px;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
     background-color: rgba(248, 247, 244, 0.2);
+    z-index: 1;
 }
 
 .card:hover .card-button {
@@ -556,7 +597,7 @@ section.hits {
     display: none;
 }
 
-.card:before {
+.hits .card:before {
     position: absolute;
     left: 13px;
     top: 6px;
@@ -1004,10 +1045,37 @@ section.hits {
 
 /*__________CATALOG__________*/
 
+.crumbs_information_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.information {
+    text-align: right;
+}
+
 .breadcrumbs {
+    display: flex;
     font-size: 14px;
     line-height: 16px;
     font-weight: normal;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.breadcrumbs .not-first::before {
+    content: '»';
+    position: absolute;
+    left: -13px;
+    bottom: 1px;
 }
 
 .breadcrumbs a {
@@ -1020,14 +1088,141 @@ section.hits {
 }
 
 .icecream-type {
+    margin: 0;
     font-size: 35px;
     line-height: 41px;
     font-weight: bold;
 }
 
 /*_____FILTERS_____*/
-.filters fieldset {
+
+.filters {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px 27px 0 27px;
+    box-sizing: border-box;
+}
+
+.filters-form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.sort-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.sort-wrapper p {
+    margin: 0;
+}
+
+.sort-wrapper fieldset:hover,
+.sort-wrapper fieldset:focus {
+    background-color: #ffffff;
+    color: #323232;
+}
+
+.sort-wrapper select {
+    text-transform: lowercase;
+}
+
+.range-filter-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.range-filter-wrapper p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.min-price,
+.max-price {
+    background-color: inherit;
+    width: 25px;
+}
+
+.range-filter {
+    width: 220px;
+}
+
+.min-price,
+.max-price,
+.range-filter {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    padding: 0;
+    color: #ffffff;
+    border-radius: 42px;
+    border: none;
+}
+
+.range-controls {
+    position: relative;
+    height: 35px;
+    padding:0 20px;
+    overflow:hidden;
+    border-radius: 42px;
+    border: none;
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+.scale {
+    margin-top: 16px;
+    padding: 0 55px 0 25px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bar {
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.toggle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 8px solid white;
+    background-color: #ababab;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.min-toggle {
+    top: 7px;
+    left: 40px;
+}
+
+.max-toggle {
+    top: 7px;
+    right: 65px;
+}
+
+.fat-wrapper p {
+    margin: 0;
+}
+
+.topping-wrapper p {
+    margin: 0;
+}
+
+.filters p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.filters fieldset {
+    padding: 7px 14px;
+    border-radius: 42px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-transform: lowercase;
 }
 
 .filters legend {
@@ -1064,20 +1259,26 @@ section.hits {
 }
 
 .filters button {
+    align-self: flex-end;
+    padding: 7px 30px;
     color: #ffffff;
     font-size: 16px;
     line-height: normal;
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid #ffffff;
+    border-radius: 25px;
 }
 
-.min-price,
-.max-price {
-    color: #ffffff;
-    background-color: rgba(255, 0, 0, 0);
-    font-size: 14px;
-    line-height: 16px;
-    border: none;
+/*_____CATALOG-ITEMS_____*/
+
+.catalog-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    padding: 0 14px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
@@ -1085,11 +1286,15 @@ section.hits {
 
 .pagination-list {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
 }
 
 .pagination-item {
     width: 26px;
     height: 26px;
+    margin-left: 10px;
 }
 
 .pagination-item a {
