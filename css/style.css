@@ -108,44 +108,49 @@ header {
     top: 30px;
     z-index: 1;
     width: 143px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
     font-size: 14px;
     line-height: 16px;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    overflow: hidden;
     border-radius: 5px;
     color: #323232;
     background-color: #ffffff;
     display: none;
 }
 
-.catalog-new h3 {
-    margin: 0;
-    padding-bottom: 15px;
-}
-
 .catalog-dropdown a {
+    padding-left: 20px;
     text-decoration: none;
     font-weight: normal;
 }
 
-.catalog-dropdown li {
-    padding: 7px 0px 7px 20px;
+.dropdown-item {
+    padding: 10px 9px 6px 0;
     text-align: left;
 }
 
-.catalog-dropdown li:hover,
-.catalog-dropdown li:focus {
+.dropdown-item:hover,
+.dropdown-item:focus {
+    margin-top: -1px;
+    margin-bottom: -1px;
     background-color: #fbded8;
     border-top: 1px solid #dce2dd;
     border-bottom: 1px solid #dce2dd;
 }
 
 .catalog-new {
+    padding-right: 9px;
+    padding-left: 6px;
+    text-align: left;
     font-weight: bold;
 }
 
 .catalog-new h3 {
+    margin: 0;
+    padding: 10px 9px 15px 15px;
     border-bottom: 1px solid #d1d0ce;
 }
 
@@ -1109,6 +1114,10 @@ section.hits {
     flex-wrap: wrap;
 }
 
+.filters-form > div {
+    margin-right: 14px;
+}
+
 .sort-wrapper {
     display: flex;
     flex-direction: column;
@@ -1116,6 +1125,10 @@ section.hits {
 
 .sort-wrapper p {
     margin: 0;
+}
+
+.sort-wrapper fieldset {
+    padding: 7px 13px 7px 10px;
 }
 
 .sort-wrapper fieldset:hover,
@@ -1126,6 +1139,7 @@ section.hits {
 
 .sort-wrapper select {
     text-transform: lowercase;
+    font-weight: 500;
 }
 
 .range-filter-wrapper {
@@ -1142,7 +1156,7 @@ section.hits {
 .min-price,
 .max-price {
     background-color: inherit;
-    width: 25px;
+    width: 23px;
 }
 
 .range-filter {
@@ -1163,8 +1177,8 @@ section.hits {
 
 .range-controls {
     position: relative;
-    height: 35px;
-    padding:0 20px;
+    height: 36px;
+    padding:0 22px;
     overflow:hidden;
     border-radius: 42px;
     border: none;
@@ -1174,12 +1188,12 @@ section.hits {
 .scale {
     margin-top: 16px;
     padding: 0 55px 0 25px;
-    height: 2px;
+    height: 4px;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 .bar {
-    height: 2px;
+    height: 4px;
     background-color: #ffffff;
 }
 
@@ -1203,9 +1217,68 @@ section.hits {
     right: 65px;
 }
 
+.fat-wrapper fieldset {
+    padding: 7px 20px 8px 0;
+}
+
 .fat-wrapper p {
     margin: 0;
 }
+
+.fat-wrapper input {
+    display: none;
+    cursor: pointer;
+}
+
+.fat-wrapper label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 45px;
+}
+
+.fat-input + label:before {
+    position: absolute;
+    left: 11px;
+    top: -3px;
+}
+
+.fat-input + label:before {
+    content: url('../img/radio-off.svg');
+}
+
+.fat-input:checked + label::before {
+    content: url('../img/radio-on.svg');
+}
+
+.topping-wrapper fieldset {
+    padding: 7px 20px 8px 0;
+}
+
+.topping-wrapper input {
+    display: none;
+    cursor: pointer;
+}
+
+.topping-wrapper label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 48px;
+}
+
+.topping-input + label:before {
+    position: absolute;
+    left: 13px;
+    top: -2px;
+}
+
+.topping-input + label:before {
+    content: url('../img/checkbox-off.svg');
+}
+
+.topping-input:checked + label::before {
+    content: url('../img/checkbox-on.svg');
+}
+
 
 .topping-wrapper p {
     margin: 0;
@@ -1215,10 +1288,11 @@ section.hits {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
+    margin-left: 16px;
+    margin-bottom: 5px;
 }
 
 .filters fieldset {
-    padding: 7px 14px;
     border-radius: 42px;
     border: none;
     background-color: rgba(255, 255, 255, 0.2);
@@ -1247,9 +1321,9 @@ section.hits {
     color: #ffffff;
 }
 
-.filters select:active,
-.filters select:hover,
-.filters select:focus {
+fieldset:active select,
+fieldset:hover select,
+fieldset:focus select {
     background-color: #ffffff;
     color: #343434;
 }
@@ -1260,13 +1334,14 @@ section.hits {
 
 .filters button {
     align-self: flex-end;
-    padding: 7px 30px;
+    padding: 7px 29px;
     color: #ffffff;
     font-size: 16px;
     line-height: normal;
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid #ffffff;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 /*_____CATALOG-ITEMS_____*/
@@ -1276,7 +1351,7 @@ section.hits {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 1200px;
-    padding: 0 14px;
+    padding: 35px 14px 0 14px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -1294,26 +1369,42 @@ section.hits {
 .pagination-item {
     width: 26px;
     height: 26px;
-    margin-left: 10px;
-}
-
-.pagination-item a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.previous-page {
-    transform: rotate(180deg);
+    margin-left: 8px;
 }
 
 .pagination-item-active {
+    margin-left: auto;
+}
+
+.pagination-item a {
+    padding: 3px 8px;
+    border-radius: 50%;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+
+.previous-page {
+}
+
+.previous-page img {
+    transform: rotate(180deg);
+}
+
+.pagination-item-active a {
+    padding: 3px 8px;
     border-radius: 50%;
     background-color: #ffffff;
     color: #323232;
     text-align: center;
-    vertical-align: middle;
 }
 
+hr {
+    margin: 0 auto;
+    width: 1146px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.302;
+}
 /*______________________________________________________________*/
 
 .hidden {

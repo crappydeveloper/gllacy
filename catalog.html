@@ -18,10 +18,10 @@
                     <a class="catalog-title nav-btn">Каталог</a>
                     <ul class="catalog-dropdown">
                         <li class="catalog-new"><h3>Новинки</h3></li>
-                        <li class="catalog-link"><a href="catalog.html">Сливочное</a></li>
-                        <li><a>Щербеты</a></li>
-                        <li><a>Фруктовый лед</a></li>
-                        <li><a>Мелорин</a></li>
+                        <li class="catalog-link dropdown-item"><a href="catalog.html">Сливочное</a></li>
+                        <li class="dropdown-item"><a>Щербеты</a></li>
+                        <li class="dropdown-item"><a>Фруктовый лед</a></li>
+                        <li class="dropdown-item"><a>Мелорин</a></li>
                     </ul>
                 </li>
                 <li class="nav-li"><a class="nav-btn" href="#">Доставка и оплата</a></li>
@@ -74,18 +74,19 @@
                     <table class="basket-table">
                         <tr>
                             <td><button class="delete-item" type="button">Удалить</button></td>
-                            <td><img width="35" height="35" src="img/orange.jpg" alt="фото"></td>
+                            <td><img width="35" height="35" src="img/orange-1200.png" alt="фото"></td>
                             <td><p>Пломбир с апельсиновым джемом</p></td>
                             <td>1,5 кг х <span class="basket-table-price">200 руб.</span></td>
                             <td>300 руб.</td>
                         </tr>
                         <tr>
                             <td><button class="delete-item" type="button">Удалить</button></td>
-                            <td><img width="35" height="35" src="img/strawberry.jpg" alt="фото"></td>
+                            <td><img width="35" height="35" src="img/strawberry-1200.png" alt="фото"></td>
                             <td><p>Клубничный пломбир с присыпкой из белого шоколада</p></td>
                             <td>1,5 кг х <span class="basket-table-price">300 руб.</span></td>
                             <td>450 руб.</td>
                         </tr>
+                        <hr>
                         <tr>
                             <td colspan="5"><span class="total">Итого:750 руб.</span></td>
                         </tr>
@@ -140,20 +141,29 @@
                 <div class="fat-wrapper">
                     <p>Жирность:</p>
                     <fieldset>
-                        <label><input type="radio" name="total-fat" value="0">0%</label>
-                        <label><input type="radio" name="total-fat" value="up-to-10" checked>до 10%</label>
-                        <label><input type="radio" name="total-fat" value="up-to-30">до 30%</label>
-                        <label><input type="radio" name="total-fat" value="above-30">выше 30%</label>
+                        <input class="fat-input" type="radio" name="total-fat" value="0" id="zero_percents">
+                        <label for="zero_percents">0%</label>
+                        <input class="fat-input" type="radio" name="total-fat" value="up-to-10" id="ten_percents" checked>
+                        <label for="ten_percents">до 10%</label>
+                        <input class="fat-input" type="radio" name="total-fat" value="up-to-30" id="thirty_percents">
+                        <label for="thirty_percents">до 30%</label>
+                        <input class="fat-input" type="radio" name="total-fat" value="above-30" id="above_thirty_percents">
+                        <label for="above_thirty_percents">выше 30%</label>
                     </fieldset>
                 </div>
                 <div class="topping-wrapper">
                     <p>Наполнители:</p>
                     <fieldset>
-                        <label><input type="checkbox" name="chocolate" checked>Шоколадные</label>
-                        <label><input type="checkbox" name="sugar" checked>Сахарные присыпки</label>
-                        <label><input type="checkbox" name="fruits">Фрукты</label>
-                        <label><input type="checkbox" name="syrups">Сиропы</label>
-                        <label><input type="checkbox" name="jam">Джемы</label>
+                        <input class="topping-input" type="checkbox" name="chocolate" id="chocolate" checked>
+                        <label for="chocolate">Шоколадные</label>
+                        <input class="topping-input" type="checkbox" name="sugar" id="sugar" checked>
+                        <label for="sugar">Сахарные присыпки</label>
+                        <input class="topping-input" type="checkbox" name="fruits" id="fruits">
+                        <label for="fruits">Фрукты</label>
+                        <input class="topping-input" type="checkbox" name="syrups" id="syrups">
+                        <label for="syrups">Сиропы</label>
+                        <input class="topping-input" type="checkbox" name="jam" id="jam">
+                        <label for="jam">Джемы</label>
                     </fieldset>
                 </div>
                 <button type="submit">Применить</button>
@@ -163,7 +173,7 @@
             <h2 class="hidden">Список товаров</h2>
             <div class="card">
                 <div class="image-wrapper">
-                    <img width="267" height="267" src="img/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <img width="267" height="267" src="img/orange-1200.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="price"><span class="uppercase">310&#8381;</span>/кг</p>
                 <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -171,7 +181,7 @@
             </div>
             <div class="card">
                <div class="image-wrapper">
-                   <img width="267" height="267" src="img/2.png" alt="Сливочно-кофейное с кусочками шоколада">
+                   <img width="267" height="267" src="img/coffee-1200.png" alt="Сливочно-кофейное с кусочками шоколада">
                </div>
                <p class="price"><span class="uppercase">380&#8381;</span>/кг</p>
                <p class="description">Сливочно-кофейное с кусочками шоколада</p>
@@ -179,7 +189,7 @@
             </div>
             <div class="card">
                <div class="image-wrapper">
-                   <img width="267" height="267" src="img/3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                   <img width="267" height="267" src="img/strawberry-1200.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                </div>
                <p class="price"><span class="uppercase">355&#8381;</span>/кг</p>
                <p class="description">Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -187,7 +197,7 @@
             </div>
             <div class="card">
                 <div class="image-wrapper">
-                    <img width="267" height="267" src="img/4.png" alt="Сливочное крем-брюле с карамельной подливкой">
+                    <img width="267" height="267" src="img/creme-brulee-1200.png" alt="Сливочное крем-брюле с карамельной подливкой">
                 </div>
                 <p class="price"><span class="uppercase">415&#8381;</span>/кг</p>
                 <p class="description">Сливочное крем-брюле с карамельной подливкой</p>
@@ -195,66 +205,66 @@
             </div>
             <div class="card">
                 <div class="image-wrapper">
-                    <img width="267" height="267" src="img/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <img width="267" height="267" src="img/cowberry-1200.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="price"><span class="uppercase">310&#8381;</span>/кг</p>
-                <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                <p class="description">Сливочное с брусничным джемом</p>
                 <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrapper">
-                    <img width="267" height="267" src="img/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <img width="267" height="267" src="img/blueberry-1200.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="price"><span class="uppercase">310&#8381;</span>/кг</p>
-                <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                <p class="description">Сливочно-черничное с цельными ягодами черники</p>
                 <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrapper">
-                    <img width="267" height="267" src="img/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <img width="267" height="267" src="img/lemon-1200.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="price"><span class="uppercase">310&#8381;</span>/кг</p>
-                <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                <p class="description">Сливочно-лимонное с карамельной присыпкой</p>
                 <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrapper">
-                    <img width="267" height="267" src="img/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <img width="267" height="267" src="img/chocolate-chips-1200.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="price"><span class="uppercase">310&#8381;</span>/кг</p>
-                <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                <p class="description">Сливочное с шоколадной стружкой</p>
                 <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrapper">
-                    <img width="267" height="267" src="img/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <img width="267" height="267" src="img/vanilla-1200.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="price"><span class="uppercase">310&#8381;</span>/кг</p>
-                <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                <p class="description">Сливочно-ванильное с кусочками шоколада</p>
                 <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrapper">
-                    <img width="267" height="267" src="img/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <img width="267" height="267" src="img/menthol-1200.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="price"><span class="uppercase">310&#8381;</span>/кг</p>
-                <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                <p class="description">Сливочноe с ментоловым сиропом</p>
                 <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrapper">
-                    <img width="267" height="267" src="img/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <img width="267" height="267" src="img/chocolate-pieces-1200.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="price"><span class="uppercase">310&#8381;</span>/кг</p>
-                <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                <p class="description">Сливочное с кусочками черного шоколада</p>
                 <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <div class="card">
                 <div class="image-wrapper">
-                    <img width="267" height="267" src="img/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <img width="267" height="267" src="img/mint-1200.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="price"><span class="uppercase">310&#8381;</span>/кг</p>
-                <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                <p class="description">Сливочное с мятным сиропом</p>
                 <div class="card-button"><a href="#">Быстрый просмотр!</a></div>
             </div>
             <ul class="pagination-list">
@@ -288,6 +298,7 @@
             </ul>
         </section>
     </main>
+    <hr>
     <footer class="main-footer">
         <section class="footer-social">
             <h2 class="hidden">Магазин Глейси в социальных сетях</h2>
