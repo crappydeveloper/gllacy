@@ -93,13 +93,24 @@ header {
     text-decoration: none;
 }
 
+.nav-btn:active {
+    color: #323232;
+    background-color: #ffffff;
+    text-decoration: none;
+    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1);
+}
+
 .catalog {
     position: relative;
 }
 
+.chosen {
+    background-color: #d07058;
+}
 
 .catalog:hover .catalog-dropdown,
-.catalog:focus .catalog-dropdown {
+.catalog:focus .catalog-dropdown,
+.catalog:active .catalog-dropdown {
     display: block;
 }
 
@@ -127,6 +138,10 @@ header {
     font-weight: normal;
 }
 
+.current {
+    background-color: #d07058;
+}
+
 .dropdown-item {
     padding: 10px 9px 6px 0;
     text-align: left;
@@ -136,9 +151,13 @@ header {
 .dropdown-item:focus {
     margin-top: -1px;
     margin-bottom: -1px;
-    background-color: #fbded8;
+    background-color: #fbded7;
     border-top: 1px solid #dce2dd;
     border-bottom: 1px solid #dce2dd;
+}
+
+.dropdown-item:active {
+    background-color: #f6b5a5;
 }
 
 .catalog-new {
@@ -252,8 +271,23 @@ header {
     border: 1px solid #acc2b6;
     border-radius: 5px;
     background-color: #ffffff;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24.3px;
+    font-weight: bold;
+}
+
+.search-form input:hover {
+    border: 2px solid #c7c6c5;
+    padding-left: 13px;
+    line-height: 22.3px;
+    margin: 0 -1px 0 0;
+}
+
+.search-form input:focus {
+    border: 2px solid #8fbdec;
+    padding-left: 13px;
+    line-height: 22.3px;
+    margin: 0 -1px 0 0;
 }
 
 .search-form input::placeholder {
@@ -285,13 +319,24 @@ header {
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
-.login-form--input  {
+.login-form--input {
     margin-bottom: 20px;
     padding: 6px 14px;
     border: 1px solid #acc2b6;
     border-radius: 5px;
     font-size: 14px;
+    font-weight: bold;
     line-height: 24px;
+}
+
+.login-form--input:hover {
+    border: 2px solid #c7c6c5;
+    padding: 5px 13px;
+}
+
+.login-form--input:focus {
+    border: 2px solid #8fbdec;
+    padding: 5px 13px;
 }
 
 .login-form--input::placeholder {
@@ -308,11 +353,24 @@ header {
     margin-right: 20px;
     padding: 10px 25px 10px;
     background-image: linear-gradient(#f26843, #e74b36);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
     color: #fefefe;
     font-size: 18px;
     line-height: 24px;
     border: none;
     border-radius: 24px;
+    cursor: pointer;
+}
+
+.login-form--button:hover,
+.login-form--button:focus {
+    background-image: linear-gradient( 90deg, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
+}
+
+.login-form--button:active {
+    background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
 }
 
 .user-creating {
@@ -328,6 +386,12 @@ header {
     font-size: 13px;
     line-height: 16px;
     color: #323232;
+}
+
+.user-creating a:hover,
+.user-creating a:focus,
+.user-creating a:active {
+    color: #e84d37;
 }
 
 .basket-button:hover + .basket,
@@ -495,6 +559,25 @@ header {
     left: 27px;
     bottom: 60px;
     z-index: 1;
+}
+
+.control {
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.control:hover,
+.control:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.current-control {
+    background-color: #ffffff;
 }
 
 /*_____SPECIAL_OFFERS_____*/
@@ -799,7 +882,7 @@ section.hits {
   height: 100%;
 }
 
-.mailing-list p {
+.mail p {
     margin: 0;
     font-size: 16px;
     line-height: 22px;
@@ -812,7 +895,7 @@ section.hits {
   justify-content: space-between;
 }
 
-.mailing-list input {
+.mail input {
     border: 1px solid #acc2b6;
     border-radius: 5px;
     font-size: 14px;
@@ -820,6 +903,17 @@ section.hits {
     font-weight: normal;
     flex-grow: 1;
     margin-right: 10px;
+    padding-left: 14px;
+}
+
+.mail input:hover {
+    border: 2px solid #c7c6c5;
+    padding-left: 13px;
+}
+
+.mail input:focus {
+    border: 2px solid #8fbdec;
+    padding-left: 13px;
 }
 
 .mailing-list input::placeholder {
@@ -1019,6 +1113,12 @@ section.hits {
     color: #ffffff;
 }
 
+.footer-links a:hover,
+.footer-links a:focus,
+.footer-links a:active {
+    color: #e84d37;
+}
+
 .favourite {
   position: relative;
 }
@@ -1086,6 +1186,12 @@ section.hits {
 .breadcrumbs a {
     color: inherit;
     text-decoration: underline;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+    color: #ffbc9e;
 }
 
 .breadcrumbs-active {
@@ -1338,10 +1444,22 @@ fieldset:focus select {
     color: #ffffff;
     font-size: 16px;
     line-height: normal;
+    font-weight: 500;
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid #ffffff;
     border-radius: 25px;
     cursor: pointer;
+}
+
+.filters button:hover,
+.filters button:focus {
+    background-color: #fbfcfb;
+    color: #323232;
+}
+
+.filters button:active {
+    background-color: rgb(237, 237, 237);
+    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1);
 }
 
 /*_____CATALOG-ITEMS_____*/
@@ -1384,6 +1502,11 @@ fieldset:focus select {
     text-align: center;
 }
 
+.pagination-item a:hover,
+.pagination-item a:focus {
+      background-color: rgba(255, 255, 255, 0.2);
+}
+
 .previous-page {
 }
 
@@ -1392,7 +1515,7 @@ fieldset:focus select {
 }
 
 .pagination-item-active a {
-    padding: 3px 8px;
+    padding: 2px 8px;
     border-radius: 50%;
     background-color: #ffffff;
     color: #323232;
