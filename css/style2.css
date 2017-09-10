@@ -64,7 +64,7 @@ nav.main-navigation {
 }
 
 .main-header-logo {
-    margin-right: 25px;
+    margin-right: 11px;
     line-height: 0;
 }
 
@@ -72,6 +72,7 @@ nav.main-navigation {
     line-height: 18px;
     list-style: none;
     margin: 0;
+    margin-top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -81,6 +82,7 @@ nav.main-navigation {
 
 .nav-li {
     padding-bottom: 11px;
+    margin-right: 2px;
 }
 
 .nav-btn {
@@ -213,7 +215,7 @@ nav.main-navigation {
 }
 
 .search-button .nav-wrapper {
-    padding: 6px 8px 8px 8px;
+    padding: 7px 8px 6px 8px;
     padding-bottom: 5px;
 }
 
@@ -231,9 +233,14 @@ nav.main-navigation {
 
 .login-button .nav-wrapper,
 .basket-button .nav-wrapper {
-    padding: 8px 5px 9px 45px;
+    padding: 10px 11px 7px 46px;
     box-sizing: border-box;
     text-align: left;
+}
+
+.basket-button .nav-wrapper {
+    background-color: #ffffff;
+    color: #323232;
 }
 
 .login-button .nav-wrapper {
@@ -625,7 +632,7 @@ nav.main-navigation {
             justify-content: flex-end;
     position: relative;
     font-weight: bold;
-    height: 570px;
+    height: 572px;
 }
 
 .slider .information {
@@ -697,7 +704,7 @@ nav.main-navigation {
 
 .slider-title {
     margin-top: 0;
-    margin-bottom: 27px;
+    margin-bottom: 33px;
     padding: 0 230px;
     text-align: center;
     font-size: 60px;
@@ -709,7 +716,7 @@ nav.main-navigation {
         -ms-grid-row-align: center;
         align-self: center;
     margin-bottom: 40px;
-    padding: 7px 50px 16px;
+    padding: 8px 40px 11px;
     border-radius: 41px;
     text-shadow: 0 2px 5px #a0200b;
     font-size: 32px;
@@ -744,8 +751,9 @@ nav.main-navigation {
 
 .control {
     content: '';
-    width: 22px;
-    height: 22px;
+    width: 21px;
+    height: 21px;
+    margin-right: 4px;
     border-radius: 50%;
     border: 2px solid #ffffff;
     background-color: transparent;
@@ -815,8 +823,9 @@ nav.main-navigation {
 }
 
 .offer p {
+    letter-spacing: 0.08px;
     margin: 0;
-    margin-bottom: 42px;
+    margin-bottom: 45px;
     font-size: 18px;
     line-height: 22px;
 }
@@ -824,7 +833,7 @@ nav.main-navigation {
 .offer a {
     -ms-flex-item-align: end;
         align-self: flex-end;
-    padding: 12px 29px 13px;
+    padding: 9px 23px 13px;
     font-size: 18px;
     line-height: 24px;
     border-radius: 24px;
@@ -833,6 +842,10 @@ nav.main-navigation {
     color: #ffffff;
     text-decoration: none;
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.chocolate a {
+    padding: 9px 22px 13px;
 }
 
 .offer a:hover,
@@ -857,6 +870,7 @@ section.hits {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: -10px;
     padding: 0 14px;
 }
 
@@ -866,6 +880,14 @@ section.hits {
     padding: 6px 13px 22px;
     border-radius: 5px;
     text-align: center;
+}
+
+.catalog-items .card {
+    margin-bottom: -20px;
+}
+
+.catalog-items .card:hover {
+    margin-bottom: -46px;
 }
 
 .image-wrapper img{
@@ -919,7 +941,7 @@ section.hits {
 .description {
     margin: 0;
     margin-bottom: 22px;
-    padding: 0 9px;
+    padding: 6px 6px;
     font-size: 16px;
     line-height: 22px;
     text-decoration: underline;
@@ -967,7 +989,7 @@ section.hits {
 }
 
 .features {
-    padding: 25px 25px 15px 20px;
+    padding: 24px 25px 15px 20px;
     background-color: #efe4d0;
     background-image: url("../img/waffle.jpg");
     background-repeat: repeat;
@@ -994,9 +1016,14 @@ section.hits {
 }
 
 .feature-li {
-    width: 43%;
+    width: 44%;
     padding: 0 3px 0 58px;
     position: relative;
+}
+
+.cow p,
+.thermometer p {
+    padding-left: 5px;
 }
 
 .feature-li::before {
@@ -1006,6 +1033,11 @@ section.hits {
     left: 0;
     width: 49px;
     height: 49px;
+}
+
+.cow,
+.thermometer {
+    left: 8px;
 }
 
 .ice-cream::before {
@@ -1032,6 +1064,7 @@ section.hits {
 }
 
 .feature-paragraph {
+    margin: 15px 0 9px;
     font-size: 16px;
     line-height: 22px;
     font-weight: normal;
@@ -1055,14 +1088,15 @@ section.hits {
 
 .news,
 .mailing-list {
-    width: 48%;
+    width: 48.8%;
     min-height: 220px;
     box-sizing: border-box;
 }
 
 .news {
-    padding-top: 25px;
-    padding-left: 17px;
+    padding-top: 23px;
+    padding-left: 19px;
+    padding-right: 230px;
     background-color: #f9e6eb;
     background-image: url("../img/strawberry-background-1200.jpg");
     border-radius: 10px;
@@ -1070,7 +1104,7 @@ section.hits {
 
 .news-title {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     font-size: 16px;
     line-height: 22px;
     color: #5a5a5a;
@@ -1098,7 +1132,7 @@ section.hits {
     height: 100%;
     box-sizing: border-box;
     margin: 0;
-    padding: 30px 20px 25px;
+    padding: 30px 20px 35px;
     background-color: #f8f7f4;
     border-radius: 10px;
 }
@@ -1148,6 +1182,10 @@ section.hits {
     padding-left: 14px;
 }
 
+.mail-form--mail::placeholder {
+    font-size: 16px;
+}
+
 .mail-form--mail:hover {
     border: 2px solid #c7c6c5;
     padding-left: 13px;
@@ -1195,7 +1233,7 @@ section.hits {
 }
 
 .mailing-list button {
-    padding: 10px 25px 15px;
+    padding: 9px 19px 12px 17px;
     background-image: -webkit-linear-gradient(#f26843, #e74b36);
     background-image: linear-gradient(#f26843, #e74b36);
     color: #fefefe;
@@ -1227,6 +1265,22 @@ section.hits {
   width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.map path {
+    fill: #d07058;
+}
+
+.map svg {
+    position: absolute;
+    top: 138px;
+    left: 266px;
+}
+
+.map .shadow {
+    position: absolute;
+    top: 170px;
+    left: 300px;
 }
 
 .contacts {
@@ -1507,10 +1561,14 @@ section.hits {
             align-items: center;
     width: 1200px;
     margin: 0 auto;
-    padding: 10px 27px;
+    padding: 15px 27px;
     box-sizing: border-box;
     font-size: 13px;
     line-height: 18px;
+}
+
+.footer-social {
+    margin-top: 13px;
 }
 
 .footer-social-list {
@@ -1629,7 +1687,7 @@ section.hits {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .information {
@@ -1687,7 +1745,7 @@ section.hits {
 .filters {
     width: 1200px;
     margin: 0 auto;
-    padding: 25px 27px 0 27px;
+    padding: 30px 27px 0 27px;
     box-sizing: border-box;
 }
 
@@ -1811,7 +1869,7 @@ section.hits {
 
 .min-toggle {
     top: 7px;
-    left: 40px;
+    left: 37px;
 }
 
 .max-toggle {
@@ -1820,7 +1878,7 @@ section.hits {
 }
 
 .fat-wrapper fieldset {
-    padding: 7px 20px 8px 0;
+    padding: 7px 17px 8px 0;
 }
 
 .fat-wrapper p {
@@ -1835,7 +1893,7 @@ section.hits {
 .fat-wrapper label {
     position: relative;
     cursor: pointer;
-    padding-left: 45px;
+    padding-left: 45.9px;
 }
 
 .fat-input + label:before {
@@ -1849,8 +1907,8 @@ section.hits {
     opacity: 0.8;
 }
 
-.fat-input:hover + label:before,
-.fat-input:focus + label:before {
+.fat-input + label:hover:before,
+.fat-input + label:hover:before {
     opacity: 1;
 }
 
@@ -1863,7 +1921,7 @@ section.hits {
 }
 
 .topping-wrapper fieldset {
-    padding: 7px 20px 8px 0;
+    padding: 7px 17px 8px 0;
 }
 
 .topping-wrapper input {
@@ -1874,7 +1932,7 @@ section.hits {
 .topping-wrapper label {
     position: relative;
     cursor: pointer;
-    padding-left: 48px;
+    padding-left: 49px;
 }
 
 .topping-input + label:before {
@@ -1887,9 +1945,8 @@ section.hits {
     content: url('../img/checkbox-off.svg');
 }
 
-.topping-input:hover + label:before path,
-.topping-input:focus + label:before path {
-    fill: #ffffff;
+.topping-input:hover + label:before,
+.topping-input:focus + label:before {
     opacity: 1;
 }
 
@@ -1911,11 +1968,11 @@ section.hits {
     line-height: 16px;
     font-weight: 500;
     margin-left: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .filters .filters-form--wrapper {
-    margin-top: 15px;
+    margin-top: 13px;
 }
 
 .filters fieldset {
@@ -2032,12 +2089,14 @@ fieldset:focus select {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-left: auto;
+    margin-top: 60px;
 }
 
 .pagination-item {
     width: 26px;
     height: 26px;
-    margin-left: 8px;
+    margin-left: 6px;
+    margin-bottom: 9px;
 }
 
 .pagination-item-active {
