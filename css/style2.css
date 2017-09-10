@@ -238,7 +238,7 @@ nav.main-navigation {
     text-align: left;
 }
 
-.basket-button .nav-wrapper {
+.user-nav-li .not-empty-basket {
     background-color: #ffffff;
     color: #323232;
 }
@@ -1294,7 +1294,7 @@ section.hits {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 320px;
+    width: 300px;
     box-sizing: border-box;
     padding: 32px 24px 31px 24px;
     border-radius: 10px;
@@ -1317,12 +1317,11 @@ section.hits {
 }
 
 .contacts-address-paragraph {
-    padding-right: 120px;
+    padding-right: 100px;
 }
 
 .contacts-address-address {
     margin-bottom: 22px;
-    padding-right: 40px;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
@@ -1351,7 +1350,7 @@ section.hits {
 
 .contacts-button {
   text-align: center;
-  padding: 12px 28px 12px;
+  padding: 9px 22px 12px;
   text-decoration: none;
   background-image: -webkit-linear-gradient(#f26843, #e74b36);
   background-image: linear-gradient(#f26843, #e74b36);
@@ -1612,7 +1611,7 @@ section.hits {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 27%;
+    width: 27.7%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1625,6 +1624,7 @@ section.hits {
     white-space: nowrap;
     text-decoration: underline;
     color: #ffffff;
+    margin-bottom: 1px;
 }
 
 .footer-links a:hover,
@@ -1916,7 +1916,7 @@ section.hits {
     opacity: 0.4;
 }
 
-.fat-input:checked + label::before {
+.fat-input:checked + label:before {
     content: url('../img/radio-on.svg');
 }
 
@@ -1943,10 +1943,11 @@ section.hits {
 
 .topping-input + label:before {
     content: url('../img/checkbox-off.svg');
+    opacity: 0.8;
 }
 
-.topping-input:hover + label:before,
-.topping-input:focus + label:before {
+.topping-input + label:hover:before,
+.topping-input + label:focus:before {
     opacity: 1;
 }
 
@@ -1954,7 +1955,7 @@ section.hits {
     opacity: 0.4;
 }
 
-.topping-input:checked + label::before {
+.topping-input:checked + label:before {
     content: url('../img/checkbox-on.svg');
 }
 
