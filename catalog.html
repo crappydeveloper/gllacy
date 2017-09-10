@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
     <title>Каталог товаров - Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style2.css" rel="stylesheet">
@@ -34,13 +35,13 @@
                     </div>
                     <div class="search">
                         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                            <input type="text" placeholder="Что ищем?" id="search">
-                            <label class="hidden" for="search">Что ищем?</label>
+                            <input class="search-form--input" type="text" placeholder="Что ищем?" id="search">
+                            <label for="search">Что ищем?</label>
                         </form>
                     </div>
                 </li>
-                <li class="login-button user-nav-li">
-                    <a class="nav-wrapper fillable" href="" tabindex="6">
+                <li class="login-button user-nav-li" tabindex="6">
+                    <a class="nav-wrapper fillable" href="">
                         <div class="nav-image-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
                         </div>
@@ -49,10 +50,10 @@
                 </li>
                 <li class="login user-nav-li">
                     <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-                        <input class="login-form--input" type="text" placeholder="Электронная почта" id="login-mail">
-                        <label class="hidden" for="login-mail">Электронная почта</label>
-                        <input class="login-form--input" type="password" placeholder="Пароль" id="password">
-                        <label class="hidden" for="password">Пароль</label>
+                        <input class="login-form--input login-form--mail" type="text" placeholder="Электронная почта" id="login-mail">
+                        <label class="label-for-mail" for="login-mail">Электронная почта</label>
+                        <input class="login-form--input login-form--password" type="password" placeholder="Пароль" id="password">
+                        <label class="label-for-password" for="password">Пароль</label>
                         <div class="form-bottom-row">
                             <input class="login-form--button" type="submit" value="Войти">
                             <p class="user-creating">
@@ -123,20 +124,20 @@
         <section class="filters">
             <h2 class="hidden">Фильтры товаров</h2>
             <form action="https://echo.htmlacademy.ru/" class="filters-form" method="post">
-                <div class="sort-wrapper">
-                    <p>Сортировка:</p>
-                    <fieldset>
-                        <label class="hidden" for="sort">Выбор принципа сортировки</label>
-                        <select name="sort" id=sort tabindex="10">
-                            <option value="popularity" selected>По популярности</option>
-                            <option value="light">Сначала недорогие</option>
-                            <option value="popularity">Сначала дорогие</option>
-                            <option value="popularity">По жирности</option>
-                        </select>
-                    </fieldset>
-                </div>
-                <div class="range-filter-wrapper">
-                    <p>Цена: <input class="min-price" type="text" value="100" id="min-price" tabindex="11"> руб. – <input class="max-price" type="text" value="500" id="max-price" tabindex="12"> руб.</p>
+                    <div class="sort-wrapper">
+                        <p>Сортировка:</p>
+                        <fieldset>
+                            <label class="hidden" for="sort">Выбор принципа сортировки</label>
+                            <select name="sort" id=sort tabindex="10">
+                                <option value="popularity" selected>По популярности</option>
+                                <option value="light">Сначала недорогие</option>
+                                <option value="popularity">Сначала дорогие</option>
+                                <option value="popularity">По жирности</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div class="range-filter-wrapper">
+                        <p>Цена: <input class="min-price" type="text" value="100" id="min-price" tabindex="11"> руб. – <input class="max-price" type="text" value="500" id="max-price" tabindex="12"> руб.</p>
                         <div class="range-filter">
                             <div class="range-controls">
                                 <div class="scale">
@@ -146,22 +147,22 @@
                                 <div class="toggle max-toggle"></div>
                             </div>
                         </div>
-                </div>
-                <div class="fat-wrapper">
-                    <p>Жирность:</p>
-                    <fieldset>
-                        <input class="fat-input" type="radio" name="total-fat" value="0" id="zero_percents">
-                        <label for="zero_percents" onselectstart="return false" onmousedown="return false" tabindex="13">0%</label>
-                        <input class="fat-input" type="radio" name="total-fat" value="up-to-10" id="ten_percents" checked>
-                        <label for="ten_percents" onselectstart="return false" onmousedown="return false" tabindex="14">до 10%</label>
-                        <input class="fat-input" type="radio" name="total-fat" value="up-to-30" id="thirty_percents">
-                        <label for="thirty_percents" onselectstart="return false" onmousedown="return false" tabindex="15">до 30%</label>
-                        <input class="fat-input" type="radio" name="total-fat" value="above-30" id="above_thirty_percents">
-                        <label for="above_thirty_percents" onselectstart="return false" onmousedown="return false" tabindex="16">выше 30%</label>
-                    </fieldset>
-                </div>
+                    </div>
+                    <div class="fat-wrapper">
+                        <p>Жирность:</p>
+                        <fieldset>
+                            <input class="fat-input" type="radio" name="total-fat" value="0" id="zero_percents">
+                            <label for="zero_percents" onselectstart="return false" onmousedown="return false" tabindex="13">0%</label>
+                            <input class="fat-input" type="radio" name="total-fat" value="up-to-10" id="ten_percents" checked>
+                            <label for="ten_percents" onselectstart="return false" onmousedown="return false" tabindex="14">до 10%</label>
+                            <input class="fat-input" type="radio" name="total-fat" value="up-to-30" id="thirty_percents">
+                            <label for="thirty_percents" onselectstart="return false" onmousedown="return false" tabindex="15">до 30%</label>
+                            <input class="fat-input" type="radio" name="total-fat" value="above-30" id="above_thirty_percents">
+                            <label for="above_thirty_percents" onselectstart="return false" onmousedown="return false" tabindex="16">выше 30%</label>
+                        </fieldset>
+                    </div>
                 <div class="topping-wrapper">
-                    <p>Наполнители:</p>
+                    <p class="filters-form--wrapper">Наполнители:</p>
                     <fieldset>
                         <input class="topping-input" type="checkbox" name="chocolate" id="chocolate" checked>
                         <label for="chocolate" onselectstart="return false" onmousedown="return false" tabindex="17">Шоколадные</label>

@@ -280,11 +280,12 @@ nav.main-navigation {
 }
 
 .search-form {
+    position: relative;
     background-color: #f8f7f4;
     border-radius: 5px;
 }
 
-.search-form input {
+.search-form--input {
     padding: 10px 14px;
     border: 1px solid #acc2b6;
     border-radius: 5px;
@@ -294,12 +295,32 @@ nav.main-navigation {
     font-weight: bold;
 }
 
-.search-form input:hover {
+.search-form label {
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    left: 15px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #999999;
+    visibility: hidden;
+}
+
+.search-form--input:hover {
     border: 2px solid #c7c6c5;
     padding: 9px 13px;
 }
 
-.search-form input:focus {
+.search-form--input:focus + label {
+    visibility: visible;
+    color: #8fbdec;
+}
+
+.search-form--input:not(:placeholder-shown) + label {
+    visibility: visible;
+}
+
+.search-form--input:focus {
     border: 2px solid #8fbdec;
     padding: 9px 13px;
 }
@@ -358,6 +379,43 @@ nav.main-navigation {
     font-size: 14px;
     font-weight: bold;
     line-height: 24px;
+}
+
+.login-form label {
+    position: absolute;
+    z-index: 1;
+    font-size: 11px;
+    line-height: 13px;
+    color: #999999;
+    visibility: hidden;
+}
+
+.label-for-mail {
+    top: 5px;
+    left: 33px;
+}
+
+.login-form--mail:focus + label {
+    visibility: visible;
+    color: #8fbdec;
+}
+
+.login-form--mail:not(:placeholder-shown) + label {
+    visibility: visible;
+}
+
+.label-for-password {
+    top: 70px;
+    left: 33px;
+}
+
+.login-form--password:focus + label {
+    visibility: visible;
+    color: #8fbdec;
+}
+
+.login-form--password:not(:placeholder-shown) + label {
+    visibility: visible;
 }
 
 .login-form--input:hover {
@@ -1068,6 +1126,7 @@ section.hits {
 }
 
 .mail-form {
+    position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,12 +1135,12 @@ section.hits {
           justify-content: space-between;
 }
 
-.mail input {
+.mail-form--mail {
     border: 1px solid #acc2b6;
     border-radius: 5px;
     font-size: 14px;
     line-height: 24px;
-    font-weight: normal;
+    font-weight: bold;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -1089,14 +1148,34 @@ section.hits {
     padding-left: 14px;
 }
 
-.mail input:hover {
+.mail-form--mail:hover {
     border: 2px solid #c7c6c5;
     padding-left: 13px;
 }
 
-.mail input:focus {
+.mail-form--mail:focus {
     border: 2px solid #8fbdec;
     padding-left: 13px;
+}
+
+.mail-form label {
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: 15px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #999999;
+    visibility: hidden;
+}
+
+.mail-form--mail:focus + label {
+    visibility: visible;
+    color: #8fbdec;
+}
+
+.mail-form--mail:not(:placeholder-shown) + label {
+    visibility: visible;
 }
 
 .mailing-list input::-webkit-input-placeholder {
@@ -1258,6 +1337,10 @@ section.hits {
     box-sizing: border-box;
 }
 
+.feedback-form {
+    position: relative;
+}
+
 .promise {
     margin: 0;
     margin-bottom: 20px;
@@ -1276,6 +1359,54 @@ section.hits {
     border: none;
     cursor: pointer;
     z-index: 2;
+}
+
+.feedback-form label {
+    position: absolute;
+    z-index: 2;
+    font-size: 11px;
+    line-height: 13px;
+    color: #999999;
+    visibility: hidden;
+}
+
+.feedback-form--name:focus + label {
+    visibility: visible;
+    color: #8fbdec;
+    top: -15px;
+    left: 15px;
+}
+
+.feedback-form--name:not(:placeholder-shown) + label {
+    visibility: visible;
+    top: -15px;
+    left: 15px;
+}
+
+.feedback-form--mail:focus + label {
+    visibility: visible;
+    color: #8fbdec;
+    top: 50px;
+    left: 15px;
+}
+
+.feedback-form--mail:not(:placeholder-shown) + label {
+    visibility: visible;
+    top: 50px;
+    left: 15px;
+}
+
+.feedback-form--write:focus + label {
+    visibility: visible;
+    color: #8fbdec;
+    top: 115px;
+    left: 15px;
+}
+
+.feedback-form--write:not(:placeholder-shown) + label {
+    visibility: visible;
+    top: 115px;
+    left: 15px;
 }
 
 .feedback-form input {
@@ -1754,11 +1885,11 @@ section.hits {
 
 .topping-input + label:before {
     content: url('../img/checkbox-off.svg');
-    opacity: 0.8;
 }
 
-.topping-input:hover + label:before,
-.topping-input:focus + label:before {
+.topping-input:hover + label:before path,
+.topping-input:focus + label:before path {
+    fill: #ffffff;
     opacity: 1;
 }
 
@@ -1781,6 +1912,10 @@ section.hits {
     font-weight: 500;
     margin-left: 16px;
     margin-bottom: 5px;
+}
+
+.filters .filters-form--wrapper {
+    margin-top: 15px;
 }
 
 .filters fieldset {

@@ -35,8 +35,8 @@
                     </div>
                     <div class="search">
                         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                            <input type="text" placeholder="Что ищем?" id="search">
-                            <label class="hidden" for="search">Что ищем?</label>
+                            <input class="search-form--input" type="text" placeholder="Что ищем?" id="search">
+                            <label for="search">Что ищем?</label>
                         </form>
                     </div>
                 </li>
@@ -50,10 +50,10 @@
                 </li>
                 <li class="login user-nav-li">
                     <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-                        <input class="login-form--input" type="text" placeholder="Электронная почта" id="login-mail">
-                        <label class="hidden" for="login-mail">Электронная почта</label>
-                        <input class="login-form--input" type="password" placeholder="Пароль" id="password">
-                        <label class="hidden" for="password">Пароль</label>
+                        <input class="login-form--input login-form--mail" type="text" placeholder="Электронная почта" id="login-mail">
+                        <label class="label-for-mail" for="login-mail">Электронная почта</label>
+                        <input class="login-form--input login-form--password" type="password" placeholder="Пароль" id="password">
+                        <label class="label-for-password" for="password">Пароль</label>
                         <div class="form-bottom-row">
                             <input class="login-form--button" type="submit" value="Войти">
                             <p class="user-creating">
@@ -169,10 +169,10 @@
                 <div class="mailing-list-box">
                     <h2 class="hidden">Рассылка</h2>
                     <div class="mail">
-                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                         <form action="https://echo.htmlacademy.ru/" class="mail-form" method="post">
-                            <input type="text" placeholder="Электронная почта" id="mail" tabindex="19">
-                            <label class="hidden" for="mail">Электронная почта</label>
+                            <input class="mail-form--mail" type="text" placeholder="Электронная почта" id="mail" tabindex="19">
+                            <label for="mail">Электронная почта</label>
                         <button type="submit" tabindex="20">Отправить</button>
                         </form>
                     </div>
@@ -251,15 +251,12 @@
             <span class="hidden">Закрыть</span>
         </button>
         <form action="https://echo.htmlacademy.ru/" class="feedback-form" method="post">
-            <p class="input-label hidden">Как вас зовут?</p>
-            <input type="text" placeholder="Как вас зовут?" id="your-name">
-            <label for="your-name" class="hidden">Как вас зовут?</label>
-            <p class="input-label hidden">Ваша почта для ответа?</p>
-            <input type="text" placeholder="Ваша почта для ответа?" id="your-mail">
-            <label for="your-mail" class="hidden">Ваша почта для ответа</label>
-            <p class="input-label hidden">Напишите что-нибудь...</p>
-            <textarea cols="30" rows="5" placeholder="Напишите что-нибудь..." name="text" id="text" ></textarea>
-            <label for="text" class="hidden">Напишите что-нибудь</label>
+            <input class="feedback-form--name"type="text" placeholder="Как вас зовут?" id="your-name">
+            <label for="your-name">Как вас зовут?</label>
+            <input class="feedback-form--mail" type="text" placeholder="Ваша почта для ответа?" id="your-mail">
+            <label for="your-mail">Ваша почта для ответа</label>
+            <textarea class="feedback-form--write" cols="30" rows="5" placeholder="Напишите что-нибудь..." name="text" id="text" ></textarea>
+            <label for="text">Напишите что-нибудь</label>
             <p class="feedback-button-wrapper">
                 <button type="submit">Отправить</button>
             </p>
