@@ -709,13 +709,13 @@ nav.main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
+    /*-webkit-box-pack: justify;
+        -ms-flex-pack: justify;*/
             justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
     margin-bottom: 35px;
-    padding: 0 27px;
+    padding: 0 27px 0 27px;
     font-weight: bold;
     box-sizing: border-box;
 }
@@ -736,6 +736,7 @@ nav.main-navigation {
 }
 
 .raspberry {
+    margin-right: 25px;
     background-color: #c93756;
     background-image: url("../img/raspberry-background-1200.jpg");
 }
@@ -815,13 +816,14 @@ section.hits {
 
 .card:hover,
 .card:focus {
-    margin-bottom: -24.5px;
+    margin-bottom: -24.6px;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
     background-color: rgba(248, 247, 244, 0.2);
     z-index: 1;
 }
 
-.card:hover .card-button {
+.card:hover .card-button,
+.card:focus .card-button {
     display: block;
 }
 
@@ -859,7 +861,7 @@ section.hits {
 .description {
     margin: 0;
     margin-bottom: 22px;
-    padding: 0 10px;
+    padding: 0 9px;
     font-size: 16px;
     line-height: 22px;
     text-decoration: underline;
@@ -1398,19 +1400,19 @@ section.hits {
     margin-right: 17px;
 }
 
-.footer-social-item svg {
+.social-btn svg {
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     opacity: 0.8;
 }
 
-.footer-social-item:hover svg,
-.footer-social-item:focus svg {
+.social-btn:hover svg,
+.social-btn:focus svg {
     opacity: 1;
 }
 
-.footer-social-item:active svg,
-.footer-social-item:active path {
+.social-btn:active svg,
+.social-btn:active path {
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
     fill: #e9e9e9;
 }
