@@ -1464,6 +1464,10 @@ section.hits {
     left: 15px;
 }
 
+.feedback-form--write::placeholder {
+    font-weight: 400;
+}
+
 .feedback-form--write:focus + label {
     visibility: visible;
     color: #8fbdec;
@@ -1576,6 +1580,24 @@ section.hits {
     width: 1200px;
     margin: 0 auto;
     padding: 18px 27px;
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.index-main-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 11px 27px;
     box-sizing: border-box;
     font-size: 13px;
     line-height: 18px;
@@ -2051,9 +2073,9 @@ section.hits {
     display: none;
 }
 
-fieldset:active select,
-fieldset:hover select,
-fieldset:focus select {
+.sort-principle:active select,
+.sort-principle:hover select,
+.sort-principle:focus select {
     background-color: #ffffff;
     color: #343434;
 }
@@ -2095,7 +2117,7 @@ fieldset:focus select {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 1200px;
@@ -2197,26 +2219,26 @@ fieldset:focus select {
             justify-content: space-between;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+.filters input::-webkit-input-placeholder,
+.filters textarea::-webkit-input-placeholder {
     font-weight: normal;
     color: #b4b4b4;
 }
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
+.filters input::-moz-placeholder,
+.filters textarea::-moz-placeholder {
     font-weight: normal;
     color: #b4b4b4;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
+.filters input:-ms-input-placeholder,
+.filters textarea:-ms-input-placeholder {
     font-weight: normal;
     color: #b4b4b4;
 }
 
-input::placeholder,
-textarea::placeholder {
+.filters input::placeholder,
+.filters textarea::placeholder {
     font-weight: normal;
     color: #b4b4b4;
 }
