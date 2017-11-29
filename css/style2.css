@@ -1430,9 +1430,9 @@ section.hits {
 }
 
 @keyframes shake {
-    0%, 100%                { transform: rotateX(0); }
-    10%, 30%, 50%, 70%, 90% { transform: rotateX(-10px); }
-    25%, 40%, 60%, 80%      { transform: rotateX(10px); }
+    0%, 100%                { left: 37.5%; }
+    10%, 30%, 50%, 70%, 90% { left: 35.5%; }
+    25%, 40%, 60%, 80%      { left: 39.5%; }
 }
 
 .feedback-error {
