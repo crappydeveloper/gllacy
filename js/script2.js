@@ -1,8 +1,8 @@
 var popUpShow = document.querySelector(".contacts-button");
 var popUp = document.querySelector(".feedback-section");
 var popUpClose = document.querySelector(".feedback-close");
-var popUpLogin = popUp.querySelector("[id=your-name]");
 var form = popUp.querySelector("form");
+var popUpLogin = popUp.querySelector("[id=your-name]");
 var popUpMail = popUp.querySelector("[id=your-mail]");
 var popUpText = popUp.querySelector("[id=text]");
 var storage = localStorage.getItem("popUpLogin");
@@ -36,7 +36,7 @@ window.addEventListener("keydown", function (evt) {
 form.addEventListener("submit", function (evt) {
     if (!popUpText.value) {
         evt.preventDefault();
-        popUp.classList.add("modal-error");
+        popUp.classList.add("feedback-error");
     }
 });
 
