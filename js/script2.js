@@ -21,12 +21,12 @@ popUpShow.addEventListener("click", function (evt) {
 popUpClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     popUp.classList.add("hidden");
-    popUp.classList.remove("modal-error");
+    popUp.classList.remove("feedback-error");
 });
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-        if (!popUp.classList.contains(hidden)){
+        if (!popUp.classList.contains("hidden")){
             popUp.classList.add("hidden");
             popUp.classList.remove("feedback-error");
         }
