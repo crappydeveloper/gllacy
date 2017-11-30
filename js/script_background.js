@@ -15,7 +15,7 @@ control_1.addEventListener("click", function(evt) {
     control_1.classList.add("current-control");
     control_2.classList.remove("current-control");
     control_3.classList.remove("current-control");
-    slider_lettering_1.style.display = "";
+    slider_lettering_1.style.display = "inline-flex";
     slider_lettering_2.style.display = "none";
     slider_lettering_3.style.display = "none";
 });
@@ -28,7 +28,7 @@ control_2.addEventListener("click", function(evt) {
     control_2.classList.add("current-control");
     control_1.classList.remove("current-control");
     control_3.classList.remove("current-control");
-    slider_lettering_2.style.display = "";
+    slider_lettering_2.style.display = "inline-flex";
     slider_lettering_1.style.display = "none";
     slider_lettering_3.style.display = "none";
 });
@@ -41,7 +41,7 @@ control_3.addEventListener("click", function(evt) {
     control_3.classList.add("current-control");
     control_2.classList.remove("current-control");
     control_1.classList.remove("current-control");
-    slider_lettering_3.style.display = "";
+    slider_lettering_3.style.display = "inline-flex";
     slider_lettering_2.style.display = "none";
     slider_lettering_1.style.display = "none";
 });
