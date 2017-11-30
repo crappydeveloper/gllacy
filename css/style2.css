@@ -1395,7 +1395,7 @@ section.hits {
 
 .feedback-section {
     width: 477px;
-    position: absolute;
+    position: fixed;
     top: 34%;
     left: 37.5%;
     padding: 20px 25px 27px 25px;
@@ -1431,8 +1431,8 @@ section.hits {
 
 @keyframes shake {
     0%, 100%                { left: 37.5%; }
-    10%, 30%, 50%, 70%, 90% { left: 35.5%; }
-    25%, 40%, 60%, 80%      { left: 39.5%; }
+    10%, 30%, 50%, 70%, 90% { left: 36.5%; }
+    25%, 40%, 60%, 80%      { left: 38.5%; }
 }
 
 .feedback-error {

@@ -37,11 +37,13 @@ form.addEventListener("submit", function(evt) {
     if (!popUpText.value) {
         evt.preventDefault();
         popUp.classList.add("feedback-error");
+        popUp.classList.remove("feedback-error");
     }
 });
 
 form.addEventListener("submit", function(evt) {
     if (popUpLogin.value) {
+        evt.preventDefault();
         localStorage.setItem("popUpLogin", popUpLogin.value);
     }
 });
