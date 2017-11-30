@@ -5,16 +5,19 @@ function initMap() {
     // Обязательные опции с которыми будет проинициализированна карта
     var mapOptions = {
         center: centerLatLng, // Координаты центра мы берем из переменной centerLatLng
-        zoom: 20               // Зум по умолчанию. Возможные значения от 0 до 21
+        zoom: 17               // Зум по умолчанию. Возможные значения от 0 до 21
     };
 
+    // Создаем карту внутри элемента #map
+    var map = new google.maps.Map(document.querySelector(".map"), mapOptions);
+
+    //Создаем маркер
     var marker = new google.maps.Marker({
           position: centerLatLng,
           map: map
         });
 
-    // Создаем карту внутри элемента #map
-    var map = new google.maps.Map(document.querySelector(".map"), mapOptions);
+
 }
 
 // Ждем полной загрузки страницы, после этого запускаем initMap()
