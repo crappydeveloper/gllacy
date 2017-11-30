@@ -37,7 +37,7 @@ form.addEventListener("submit", function(evt) {
     if (!popUpText.value) {
         evt.preventDefault();
         popUp.classList.add("feedback-error");
-        popUp.classList.remove("feedback-error");
+        setTimeout('popUp.classList.remove("feedback-error")', 501);
     }
 });
 
