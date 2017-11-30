@@ -8,6 +8,11 @@ function initMap() {
         zoom: 20               // Зум по умолчанию. Возможные значения от 0 до 21
     };
 
+    var marker = new google.maps.Marker({
+          position: centerLatLng,
+          map: map
+        });
+
     // Создаем карту внутри элемента #map
     var map = new google.maps.Map(document.querySelector(".map"), mapOptions);
 }
