@@ -6,7 +6,6 @@ body {
     color: #ffffff;
     font-weight: 500;
     font-family: 'Roboto', Arial, sans-serif;
-    background-color: #849d8f;
 }
 
 @font-face {
@@ -666,16 +665,19 @@ nav.main-navigation {
 .slider-frame-first {
     background-image: url("../img/ice-cream-first-frame.png"),
         url("../img/light-first-frame-1200.png");
+    background-color: #849d8f;
 }
 
 .slider-frame-second {
     background-image: url("../img/ice-cream-second-frame.png"),
         url("../img/light-second-frame-1200.png");
+    background-color: #8996a6;
 }
 
 .slider-frame-third {
     background-image: url("../img/ice-cream-third-frame.png"),
         url("../img/light-third-frame-1200.png");
+    background-color: #9d8b84;
 }
 
 .slider-lettering {
