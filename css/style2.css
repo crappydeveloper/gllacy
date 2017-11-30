@@ -1280,6 +1280,7 @@ section.hits {
 .map {
   position: relative;
   width: 1200px;
+  height: 430px;
   margin: 0 auto;
   box-sizing: border-box;
 }
